@@ -70,14 +70,23 @@ def weather_conditions(request):
         print(city_name)
         appid = "64b27a9ca653a9ab3855bc2801d2edaf"
         url="https://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid=" + appid
-
+            
         
         res = requests.get(url.format(city_name)).json()
-        city_info = {
-            "city": city_name,
-            "temp": res["main"]["temp"],
-            "icon": res["weather"][0]["icon"],
-            }
+        if city_name == "Los Angeles":
+            city_info = {
+                "city": city_name,
+                "temp": res["main"]["temp"],
+                "icon": res["weather"][0]["icon"],
+                "country": "California, USA",
+                "problem1": "floods",
+                "problem2": "heat waves",
+                "problem3": "forest fires",
+                "problem4": "smog",
+                "solution1": "Air purification",
+                "solution2": "ecology-friendly ",
+                "solution3": "New green zones",
+                }
         context = {"info":city_info, "pop_up":True}
     return render(request, "main1/weather_conditions.html", context)
 def climate_change_simulator(request):
