@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Weather</title>
+    <style>body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        background-image:  url("https://i.yapx.cc/YOeuL.png");
+        background-size: 100%;
+        z-index: -100;
+        background-repeat: no-repeat;
+    }
+    .buttons{}
+    .buttons c {
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        display: block;
+        transition: 0.3s;
+    }
+    .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 80px;
+        opacity: 0.65;
+        background: white;
+    }
+    
+    .sidebar a {
+        padding: 15px 15px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #ffffff;
+        display: block;
+        transition: 0.3s;
+        text-shadow:
+        1px 0 black,
+        0 -1px black,
+        -1px 0 black,
+        0 1px black;
+    }
+    
+    .sidebar a:hover {
+        background-color: #575757;
+    }
+    .sidebar .accbtn {
+        position: absolute;
+        top: 10px;
+        right: 250px;
+        font-size: 18px;
+        margin-left: 50px;
+        color: black;
+        cursor: pointer;
+    }
+    
+    .sidebar .closebtn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 20px;
+        margin-left: 50px;
+        color: black;
+        cursor: pointer;
+    }
+    
+    .openbtn {
+        padding:1px 8px;
+        border-radius: 7px;
+        cursor: pointer;
+        border: none;
+        background-color: transparent; 
+    }
+    
+    .openbtn:hover {
+        background-color: #cbcbcb;
+    }
+    
+    #main {
+        transition: margin-left 0.5s;
+        padding: 20px;
+    }
+    
+    p3{
+        text-shadow:
+        3px 0 black,
+        0 -3px black,
+        -3px 0 black,
+        0 3px black;
+    }
+    p2{
+        text-shadow:
+        2px 0 black,
+        0 -2px black,
+        -2px 0 black,
+        0 2px black;
+    }
+    p1{
+        text-shadow:
+        1px 0 black,
+        0 -1px black,
+        -1px 0 black,
+        0 1px black;
+    }
+    p1.5{
+        text-shadow:
+        1.5px 0 black,
+        0 -1.5px black,
+        -1.5px 0 black,
+        0 1.5px black;
+    }    
+    </style>
+</head>
+<body>
+    <div style="width: 100%; height: 100%; position: relative; background: white">
+        <p1 style="left: 120px; top: 303px; position: absolute; opacity: 1; color: white; font-size: 36px;   ; font-weight: 400; word-wrap: break-word">Don’t know about Koly</p1>
+        <p1 style="left: 120px; top: 240px; position: absolute; opacity: 1; color: white; font-size: 36px;   ; font-weight: 400; word-wrap: break-word">Iman is a genius too</p1>
+        <p1 style="left: 120px; top: 177px; position: absolute; opacity: 1; color: white; font-size: 36px;   ; font-weight: 400; word-wrap: break-word">Kosta is a genius</p1>
+        <p2 style="left: 87px; top: 29px; position: absolute; opacity: 1; color: white; font-size: 96px;   ; font-weight: 400; word-wrap: break-word">About us:</p2>
+        <div style="width: 16px; height: 16px; left: 87px; top: 191px; position: absolute; opacity: 1; background: white; border-radius: 9999px; border: 2px black solid"></div>
+        <div style="width: 16px; height: 16px; left: 87px; top: 254px; position: absolute; opacity: 1; background: white; border-radius: 9999px; border: 2px black solid"></div>
+        <div style="width: 16px; height: 16px; left: 87px; top: 317px; position: absolute; opacity: 1; background: white; border-radius: 9999px; border: 2px black solid"></div>
+        <div style="width: 308px; height: 308px; left: 672px; top: 270px; position: absolute">
+            <svg width="308" height="308" viewBox="0 0 308 308" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_d_1_17)">
+                <path d="M260.944 124.056C260.944 192.57 205.403 248.111 136.889 248.111C68.3748 248.111 12.8333 192.57 12.8333 124.056C12.8333 55.5416 68.3748 0 136.889 0C205.403 0 260.944 55.5416 260.944 124.056Z" fill="#F8C740"/>
+                </g>
+                <g filter="url(#filter1_d_1_17)">
+                <path d="M115.622 268.583C145.326 268.583 169.4 245.051 169.4 216.027C169.4 187.004 145.326 163.472 115.622 163.472C93.1238 163.472 73.8394 176.98 65.8147 196.15C62.8318 195.4 59.7017 195.005 56.4667 195.005C35.6698 195.005 18.8222 211.475 18.8222 231.794C18.8222 252.113 35.6698 268.583 56.4667 268.583H115.622Z" fill="#D9D9D9" stroke="#B9B9B9" stroke-width="2" stroke-linejoin="round"/>
+                </g>
+                <g filter="url(#filter2_d_1_17)">
+                <path d="M213.4 124.361C189.097 124.361 169.4 104.113 169.4 79.1389C169.4 54.1651 189.097 33.9167 213.4 33.9167C231.808 33.9167 247.586 45.5402 254.152 62.0349C256.592 61.3901 259.153 61.05 261.8 61.05C278.816 61.05 292.6 75.2217 292.6 92.7056C292.6 110.189 278.816 124.361 261.8 124.361H213.4Z" fill="#D9D9D9" stroke="#B6B6B6" stroke-width="2" stroke-linejoin="round"/>
+                </g>
+            </svg>
+        </div>
+    </div>
+    <div id="sidebar" class="sidebar">
+        <a href="#" class="accbtn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <g opacity="0.8" clip-path="url(#clip0_0_39)">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M40 20C40 25.3625 37.8894 30.232 34.454 33.8234C30.8254 37.6163 25.7191 39.9834 20.0597 40C20.0398 40 20.0199 40 20 40C19.9801 40 19.9602 40 19.9403 40C14.2809 39.9834 9.17446 37.6163 5.54609 33.8234C2.11045 30.232 0 25.3625 0 20C0 8.95431 8.95431 0 20 0C31.0457 0 40 8.95431 40 20ZM32.1223 30C29.2403 26.5099 24.8798 24.2856 20 24.2856C15.1202 24.2856 10.7598 26.5099 7.87757 30C10.7598 33.49 15.1202 35.7143 20 35.7143C24.8798 35.7143 29.2403 33.49 32.1223 30ZM20.0003 21.4285C23.9452 21.4285 27.1432 18.2305 27.1432 14.2856C27.1432 10.3407 23.9452 7.14277 20.0003 7.14277C16.0555 7.14277 12.8575 10.3407 12.8575 14.2856C12.8575 18.2305 16.0555 21.4285 20.0003 21.4285Z" fill="#384352"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_0_39">
+                    <rect width="40" height="40" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+        </a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 31 31" fill="none">
+                <path d="M1 1L30 30M30 1L1 30" stroke="#384352"/>
+            </svg>
+        </a>
+        <a href="http://127.0.0.1:8000/">Home</a>
+        <a href="#">Contact</a>
+        <a href="#">Background photo</a>
+        <a href="http://127.0.0.1:8000/about">About</a>
+    </div>
+    <div id="main">
+        <button class="openbtn" onclick="openSidebar()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="45" viewBox="0 0 11 46" fill="none">
+                <circle cx="5.5" cy="5.5" r="5" fill="white" stroke="black"/>
+                <circle cx="5.5" cy="22.6111" r="5" fill="white" stroke="black"/>
+                <circle cx="5.5" cy="39.7222" r="5" fill="white" stroke="black"/>
+              </svg>
+        </button>
+    </div>
+    <script>
+    function openSidebar() {
+        document.getElementById("sidebar").style.width = "326px";
+        document.getElementById("main").style.marginLeft = "326px";
+ 
+    }
+
+    function closeSidebar() {
+        document.getElementById("sidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+    }
+
+    </script>
+    
+</body>
+</html>

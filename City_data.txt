@@ -1,0 +1,110 @@
+def climate_change_simulator(request):
+    appid = "64b27a9ca653a9ab3855bc2801d2edaf"
+    url="https://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid=" + appid
+
+    form = City1Form()
+    cities = City1.objects.all()
+    for city1 in cities:
+        q = True
+    res = requests.get(url.format(city1.name)).json()
+    city_info = {
+            "city": city1.name,
+            "temp": res["main"]["temp"],
+            "icon": res["weather"][0]["icon"],
+    }
+    city_info = {
+            "city": city1.name,
+            "temp": res["main"]["temp"],
+            "icon": res["weather"][0]["icon"],
+    }
+    context = {"info":city_info, "form": form}
+    City1.objects.all().delete()
+    values_for_update={"name":city1}
+    bob, created = City1.objects.update_or_create(id=2, defaults = values_for_update)
+    return render(request, "main1/climate_change_simulator.html", context)
+def about(request):
+
+for city1 in cities:
+        res = requests.get(url.format(city1.name)).json()
+        if city1.name == "Los Angeles":
+            cityLS_info = {
+                "city": city1.name,
+                "temp": res["main"]["temp"],
+                "icon": res["weather"][0]["icon"],
+        }
+        if city1.name == "Nuuk":
+            cityNu_info = {
+                "city": city1.name,
+                "temp": res["main"]["temp"],
+                "icon": res["weather"][0]["icon"],
+        }
+        if city1.name == "London":
+            cityLo_info = {
+                "city": city1.name,
+                "temp": res["main"]["temp"],
+                "icon": res["weather"][0]["icon"],
+        }
+        if city1.name == "Niamey":
+            cityNi_info = {
+                "city": city1.name,
+                "temp": res["main"]["temp"],
+                "icon": res["weather"][0]["icon"],
+        }
+        if city1.name == "Prague":
+            cityPr_info = {
+                "city": city1.name,
+                "temp": res["main"]["temp"],
+                "icon": res["weather"][0]["icon"],
+        }
+        if city1.name == "Warsaw":
+            cityWr_info = {
+                "city": city1.name,
+                "temp": res["main"]["temp"],
+                "icon": res["weather"][0]["icon"],
+        }
+        if city1.name == "Baghdad":
+            cityBg_info = {
+                "city": city1.name,
+                "temp": res["main"]["temp"],
+                "icon": res["weather"][0]["icon"],
+        }
+        if city1.name == "Moscow":
+            cityMs_info = {
+                "city": city1.name,
+                "temp": res["main"]["temp"],
+                "icon": res["weather"][0]["icon"],
+        }
+        if city1.name == "Aksu":
+            cityAk_info = {
+                "city": city1.name,
+                "temp": res["main"]["temp"],
+                "icon": res["weather"][0]["icon"],
+        }
+        if city1.name == "Vladivostok":
+            cityVl_info = {
+                "city": city1.name,
+                "temp": res["main"]["temp"],
+                "icon": res["weather"][0]["icon"],
+        }
+    contextLS = {"infoLS":cityLS_info, "form": form}
+    contextNu = {"infoNu":cityNu_info, "form": form}
+    contextLo = {"infoLo":cityLo_info, "form": form}
+    contextNi = {"infoNi":cityNi_info, "form": form}
+    contextPr = {"infoPr":cityPr_info, "form": form}
+    contextWr = {"infoWr":cityWr_info, "form": form}
+    contextBg = {"infoBg":cityBg_info, "form": form}
+    contextMs = {"infoMs":cityMs_info, "form": form}
+    contextAk = {"infoMs":cityAk_info, "form": form}
+    contextVl = {"infoMs":cityVl_info, "form": form}
+    contexts = []
+    contexts.append(contextLS)
+    contexts.append(contextNu)
+    contexts.append(contextLo)
+    contexts.append(contextNi)
+    contexts.append(contextPr)
+    contexts.append(contextWr)
+    contexts.append(contextBg)
+    contexts.append(contextMs)
+    contexts.append(contextAk)
+    contexts.append(contextVl)
+    return render(request, "main1/climate_change_simulator.html", contexts)
