@@ -61,17 +61,7 @@ def user_settings(request):
     context = {"info":city_info, "form": form}
     City.objects.all().delete()
     return render(request, "main1/user_settings.html", context)
-city_name = None
-def update_city(request):
-    global city_name  # Используем глобальную переменную
 
-    if request.method == 'POST':
-        city_name = request.POST.get('city_name')  # Получаем название города из формы
-
-        # Перенаправляем на weather_conditions
-        return weather_conditions(request)
-
-    return HttpResponse("Неверный метод запроса", status=400)
 def weather_conditions(request):
     context={"pop_up":False}
     if request.method == 'POST':
