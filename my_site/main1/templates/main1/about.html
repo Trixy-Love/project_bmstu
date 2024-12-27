@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Weather</title>
+    <title>Climate change simulator</title>
     <style>body {
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
-        overflow-x: hidden;
-        background-image:  url("https://i.yapx.cc/YOeuL.png");
-        background-size: 100%;
-        z-index: -100;
-        background-repeat: no-repeat;
     }
-    .buttons{}
+    .center{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .buttons{
+        cursor: pointer;
+    }
     .buttons c {
         cursor: pointer;
         border: none;
@@ -110,40 +113,190 @@
         -1px 0 black,
         0 1px black;
     }
-    p1.5{
+    .centerq{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .sidebarq {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 80px;
+        opacity: 0.65;
+        background: white;
+    }
+    
+    .sidebarq aq {
+        padding: 15px 15px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #ffffff;
+        display: block;
+        transition: 0.3s;
         text-shadow:
-        1.5px 0 black,
-        0 -1.5px black,
-        -1.5px 0 black,
-        0 1.5px black;
+        1px 0 black,
+        0 -1px black,
+        -1px 0 black,
+        0 1px black;
+    }
+    
+    .sidebarq aq:hover {
+        background-color: #575757;
+    }
+    .sidebarq .accbtnq {
+        position: absolute;
+        top: 10px;
+        right: 250px;
+        font-size: 18px;
+        margin-left: 50px;
+        color: black;
+        cursor: pointer;
+    }
+    
+    .sidebarq .closebtnq {
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        font-size: 20px;
+        margin-right: 50px;
+        color: black;
+        cursor: pointer;
+        padding: 15px 15px;
+    }
+    
+    .openbtnq {
+        padding:1px 8px;
+        border-radius: 7px;
+        cursor: pointer;
+        border: none;
+        background-color: transparent; 
+    }
+    
+    .openbtnq:hover {
+        background-color: #cbcbcb;
+    }
+    #mainq {
+        transition: margin-left 0.5s;
+        padding: 20px;
     }    
     </style>
 </head>
 <body>
-    <div style="width: 100%; height: 100%; position: relative; background: white">
-        <p1 style="left: 120px; top: 303px; position: absolute; opacity: 1; color: white; font-size: 36px;   ; font-weight: 400; word-wrap: break-word">Don’t know about Koly</p1>
-        <p1 style="left: 120px; top: 240px; position: absolute; opacity: 1; color: white; font-size: 36px;   ; font-weight: 400; word-wrap: break-word">Iman is a genius too</p1>
-        <p1 style="left: 120px; top: 177px; position: absolute; opacity: 1; color: white; font-size: 36px;   ; font-weight: 400; word-wrap: break-word">Kosta is a genius</p1>
-        <p2 style="left: 87px; top: 29px; position: absolute; opacity: 1; color: white; font-size: 96px;   ; font-weight: 400; word-wrap: break-word">About us:</p2>
-        <div style="width: 16px; height: 16px; left: 87px; top: 191px; position: absolute; opacity: 1; background: white; border-radius: 9999px; border: 2px black solid"></div>
-        <div style="width: 16px; height: 16px; left: 87px; top: 254px; position: absolute; opacity: 1; background: white; border-radius: 9999px; border: 2px black solid"></div>
-        <div style="width: 16px; height: 16px; left: 87px; top: 317px; position: absolute; opacity: 1; background: white; border-radius: 9999px; border: 2px black solid"></div>
-        <div style="width: 308px; height: 308px; left: 672px; top: 270px; position: absolute">
-            <svg width="308" height="308" viewBox="0 0 308 308" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g filter="url(#filter0_d_1_17)">
-                <path d="M260.944 124.056C260.944 192.57 205.403 248.111 136.889 248.111C68.3748 248.111 12.8333 192.57 12.8333 124.056C12.8333 55.5416 68.3748 0 136.889 0C205.403 0 260.944 55.5416 260.944 124.056Z" fill="#F8C740"/>
-                </g>
-                <g filter="url(#filter1_d_1_17)">
-                <path d="M115.622 268.583C145.326 268.583 169.4 245.051 169.4 216.027C169.4 187.004 145.326 163.472 115.622 163.472C93.1238 163.472 73.8394 176.98 65.8147 196.15C62.8318 195.4 59.7017 195.005 56.4667 195.005C35.6698 195.005 18.8222 211.475 18.8222 231.794C18.8222 252.113 35.6698 268.583 56.4667 268.583H115.622Z" fill="#D9D9D9" stroke="#B9B9B9" stroke-width="2" stroke-linejoin="round"/>
-                </g>
-                <g filter="url(#filter2_d_1_17)">
-                <path d="M213.4 124.361C189.097 124.361 169.4 104.113 169.4 79.1389C169.4 54.1651 189.097 33.9167 213.4 33.9167C231.808 33.9167 247.586 45.5402 254.152 62.0349C256.592 61.3901 259.153 61.05 261.8 61.05C278.816 61.05 292.6 75.2217 292.6 92.7056C292.6 110.189 278.816 124.361 261.8 124.361H213.4Z" fill="#D9D9D9" stroke="#B6B6B6" stroke-width="2" stroke-linejoin="round"/>
-                </g>
+    {%if info.icon == "01d" %}
+    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YOeuL.png" />
+    {%elif info.icon == "02d" %}
+    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YOeuL.png" />
+    {%elif info.icon == "03d" %}
+    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQNE.png" />
+    {%elif info.icon == "04d" %}
+    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQNe.png" />
+    {%elif info.icon == "09d" %}
+    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQOU.png" />
+    {%elif info.icon == "10d" %}
+    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQPM.png" />
+    {%elif info.icon == "11d" %}
+    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQPg.png" />
+    {%elif info.icon == "13d" %}
+    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQQB.png" />
+    {%elif info.icon == "50d" %}
+    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YOeuL.png" />
+    {%elif info.icon == "01n" %}
+    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQQi.png" />
+    {%elif info.icon == "02n" %}
+    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQQi.png" />
+    {%elif info.icon == "03n" %}
+    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQNE.png" />
+    {%elif info.icon == "04n" %}
+    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQNE.png" />
+    {%elif info.icon == "09n" %}
+    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQOU.png" />
+    {%elif info.icon == "10n" %}
+    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQOU.png" />
+    {%elif info.icon == "11n" %}
+    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQWy.png" />
+    {%elif info.icon == "13n" %}
+    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQXG.png" />
+    {%elif info.icon == "50n" %}
+    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YOeuL.png" />
+    {% endif %}
+    <div id="sidebarq" class="sidebarq">
+        <a href="javascript:void(0)" class="closebtnq" onclick="closeSidebarq()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 31 31" fill="none">
+                <path d="M1 1L30 30M30 1L1 30" stroke="#384352"/>
             </svg>
+        </a>
+       
+        <div class="row">
+            <div class="col-5">
+                <p1 style="left: 35px; top: 105px; position: absolute; color: white; font-size: 32px; font-weight: 400; word-wrap: break-word">Choose your city</p1>
+                <form style="left: 73px; top: 150px; position: absolute" action="" method="post">
+                    {% csrf_token %}
+                    <div>
+                        {{form.name}}
+                    </div>
+                    <input style="position: absolute; left: 55px; top: 30px" type="submit" name="send" value="Search" class="mt-2 btn btn-danger">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div >
+        <div style="width: 100%; height: 100%; position: relative; background: white">
+          {%if info.icon == "01d" %}
+          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YNXVj.jpg" />
+          {%elif info.icon == "02d" %}
+          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YNXVj.jpg" />
+          {%elif info.icon == "03d" %}
+          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YTQiU.png" />
+          {%elif info.icon == "04d" %}
+          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YTQiU.png" />
+          {%elif info.icon == "09d" %}
+          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YTQje.png" />
+          {%elif info.icon == "10d" %}
+          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YTQj4.png" />
+          {%elif info.icon == "11d" %}
+          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YTQkk.png" />
+          {%elif info.icon == "13d" %}
+          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YTQk5.png" />
+          {%elif info.icon == "50d" %}
+          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YNXVj.jpg" />
+          {%elif info.icon == "01n" %}
+          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YTQnN.png" />
+          {%elif info.icon == "02n" %}
+          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YTQnN.png" />
+          {%elif info.icon == "03n" %}
+          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YTQiU.png" />
+          {%elif info.icon == "04n" %}
+          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YTQiU.png" />
+          {%elif info.icon == "09n" %}
+          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YTQje.png" />
+          {%elif info.icon == "10n" %}
+          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YTQje.png" />
+          {%elif info.icon == "11n" %}
+          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YTQoE.png" />
+          {%elif info.icon == "13n" %}
+          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YNXVj.jpg" />
+          {%elif info.icon == "50n" %}
+          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YNXVj.jpg" />
+          {% endif %}
+        </div>
+    </div>
+    <div style="width: 100%; height: 100%; position: relative">
+        <div style="width: 294px; height: 335px; left: 170px; top: 122px; position: absolute">
+            <p1 style="left: 10px; top: 205px; position: absolute; color: white; font-size: 20px;   font-weight: 500; word-wrap: break-word">Address:</p1>
+            <p1 style="left: 10px; top: 280px; position: absolute; color: white; font-size: 20px;   font-weight: 500; word-wrap: break-word">Contacts:</p1>
+            <p1 style="left: 10px; top: 311px; position: absolute; color: white; font-size: 20px;   font-weight: 500; word-wrap: break-word">kostasmirnov025@gmail.com</p1>
+            <p1 style="left: 0px; top: 0px; position: absolute; color: white; font-size: 64px;   font-weight: 500; word-wrap: break-word">About us:</p1>
+            <p1 style="left: 10px; top: 236px; position: absolute; color: white; font-size: 20px;   font-weight: 500; word-wrap: break-word">Tokmakov lane, 17s3</p1>
         </div>
     </div>
     <div id="sidebar" class="sidebar">
-        <a href="#" class="accbtn">
+        <a href="javascript:void(0)" class="accbtn" id="accbtn" onclick="openSidebarq()">
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                 <g opacity="0.8" clip-path="url(#clip0_0_39)">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M40 20C40 25.3625 37.8894 30.232 34.454 33.8234C30.8254 37.6163 25.7191 39.9834 20.0597 40C20.0398 40 20.0199 40 20 40C19.9801 40 19.9602 40 19.9403 40C14.2809 39.9834 9.17446 37.6163 5.54609 33.8234C2.11045 30.232 0 25.3625 0 20C0 8.95431 8.95431 0 20 0C31.0457 0 40 8.95431 40 20ZM32.1223 30C29.2403 26.5099 24.8798 24.2856 20 24.2856C15.1202 24.2856 10.7598 26.5099 7.87757 30C10.7598 33.49 15.1202 35.7143 20 35.7143C24.8798 35.7143 29.2403 33.49 32.1223 30ZM20.0003 21.4285C23.9452 21.4285 27.1432 18.2305 27.1432 14.2856C27.1432 10.3407 23.9452 7.14277 20.0003 7.14277C16.0555 7.14277 12.8575 10.3407 12.8575 14.2856C12.8575 18.2305 16.0555 21.4285 20.0003 21.4285Z" fill="#384352"/>
@@ -153,7 +306,7 @@
                     <rect width="40" height="40" fill="white"/>
                   </clipPath>
                 </defs>
-              </svg>
+            </svg>
         </a>
         <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 31 31" fill="none">
@@ -162,7 +315,6 @@
         </a>
         <a href="http://127.0.0.1:8000/">Home</a>
         <a href="#">Contact</a>
-        <a href="#">Background photo</a>
         <a href="http://127.0.0.1:8000/about">About</a>
     </div>
     <div id="main">
@@ -184,6 +336,16 @@
     function closeSidebar() {
         document.getElementById("sidebar").style.width = "0";
         document.getElementById("main").style.marginLeft = "0";
+    }
+    function openSidebarq() {
+        document.getElementById("sidebarq").style.width = "326px";
+        document.getElementById("mainq").style.marginLeft = "326px";
+
+    }
+
+    function closeSidebarq() {
+        document.getElementById("sidebarq").style.width = "0";
+        document.getElementById("mainq").style.marginLeft = "0";
     }
 
     </script>
