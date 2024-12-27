@@ -167,6 +167,7 @@
         margin-right: 50px;
         color: black;
         cursor: pointer;
+        padding: 15px 15px;
     }
     
     .openbtnq {
@@ -187,8 +188,43 @@
     </style>
 </head>
 <body>
-    
+    {%if info.icon == "01d" %}
     <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YOeuL.png" />
+    {%elif info.icon == "02d" %}
+    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YOeuL.png" />
+    {%elif info.icon == "03d" %}
+    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQNE.png" />
+    {%elif info.icon == "04d" %}
+    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQNe.png" />
+    {%elif info.icon == "09d" %}
+    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQOU.png" />
+    {%elif info.icon == "10d" %}
+    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQPM.png" />
+    {%elif info.icon == "11d" %}
+    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQPg.png" />
+    {%elif info.icon == "13d" %}
+    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQQB.png" />
+    {%elif info.icon == "50d" %}
+    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YOeuL.png" />
+    {%elif info.icon == "01n" %}
+    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQQi.png" />
+    {%elif info.icon == "02n" %}
+    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQQi.png" />
+    {%elif info.icon == "03n" %}
+    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQNE.png" />
+    {%elif info.icon == "04n" %}
+    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQNE.png" />
+    {%elif info.icon == "09n" %}
+    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQOU.png" />
+    {%elif info.icon == "10n" %}
+    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQOU.png" />
+    {%elif info.icon == "11n" %}
+    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQWy.png" />
+    {%elif info.icon == "13n" %}
+    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQXG.png" />
+    {%elif info.icon == "50n" %}
+    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YOeuL.png" />
+    {% endif %}
     <div id="sidebarq" class="sidebarq">
         <a href="javascript:void(0)" class="closebtnq" onclick="closeSidebarq()">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 31 31" fill="none">
@@ -206,13 +242,48 @@
                     </div>
                     <input style="position: absolute; left: 55px; top: 30px" type="submit" name="send" value="Search" class="mt-2 btn btn-danger">
                 </form>
-            <p1>{{info.icon}} </p1>
             </div>
         </div>
     </div>
     <div >
         <div style="width: 100%; height: 100%; position: relative; background: white">
-            <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YNXVj.jpg" />
+          {%if info.icon == "01d" %}
+          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YNXVj.jpg" />
+          {%elif info.icon == "02d" %}
+          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YNXVj.jpg" />
+          {%elif info.icon == "03d" %}
+          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YTQiU.png" />
+          {%elif info.icon == "04d" %}
+          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YTQiU.png" />
+          {%elif info.icon == "09d" %}
+          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YTQje.png" />
+          {%elif info.icon == "10d" %}
+          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YTQj4.png" />
+          {%elif info.icon == "11d" %}
+          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YTQkk.png" />
+          {%elif info.icon == "13d" %}
+          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YTQk5.png" />
+          {%elif info.icon == "50d" %}
+          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YNXVj.jpg" />
+          {%elif info.icon == "01n" %}
+          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YTQnN.png" />
+          {%elif info.icon == "02n" %}
+          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YTQnN.png" />
+          {%elif info.icon == "03n" %}
+          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YTQiU.png" />
+          {%elif info.icon == "04n" %}
+          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YTQiU.png" />
+          {%elif info.icon == "09n" %}
+          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YTQje.png" />
+          {%elif info.icon == "10n" %}
+          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YTQje.png" />
+          {%elif info.icon == "11n" %}
+          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YTQoE.png" />
+          {%elif info.icon == "13n" %}
+          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YNXVj.jpg" />
+          {%elif info.icon == "50n" %}
+          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YNXVj.jpg" />
+          {% endif %}
             <div style="width: 724px; height: 27px; left: 169px; top: 412px; position: absolute">
                 <a href="http://127.0.0.1:8000/what_to_wear">
                     <p1 style="left: 208px; top: 0px; position: absolute; text-align: center; color: white; font-size: 22px;   font-weight: 500; word-wrap: break-word">Weather today</p1>
@@ -528,7 +599,6 @@
         </a>
         <a href="http://127.0.0.1:8000/">Home</a>
         <a href="#">Contact</a>
-        <a href="#">Background photo</a>
         <a href="http://127.0.0.1:8000/about">About</a>
     </div>
     <div id="main">
