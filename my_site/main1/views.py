@@ -74,20 +74,36 @@ def weather_conditions(request):
         
         res = requests.get(url.format(city_name)).json()
         if city_name == "Los Angeles":
-            city_info = {
-                "city": city_name,
-                "temp": res["main"]["temp"],
-                "icon": res["weather"][0]["icon"],
-                "country": "California, USA",
-                "problem1": "floods",
-                "problem2": "heat waves",
-                "problem3": "forest fires",
-                "problem4": "smog",
+            city_infoC = {
+                "cityC": city_name,
+                "tempC": str(res["main"]["temp"]) + "°C",
+                "iconC": res["weather"][0]["icon"],
+                "countryC": "California, USA",
+                "problem1": "Floods",
+                "problem2": "Heat waves",
+                "problem3": "Forest fires",
+                "problem4": "Smog",
                 "solution1": "Air purification",
-                "solution2": "ecology-friendly ",
+                "solution2": "Ecology-friendly cars",
                 "solution3": "New green zones",
+                "feels_like": "Feels like: " + str(round(res["main"]["feels_like"])) + "°",
                 }
-        context = {"info":city_info, "pop_up":True}
+        if city_name == "Los Angeles":
+            city_infoC = {
+                "cityC": city_name,
+                "tempC": str(res["main"]["temp"]) + "°C",
+                "iconC": res["weather"][0]["icon"],
+                "countryC": "California, USA",
+                "problem1": "Floods",
+                "problem2": "Heat waves",
+                "problem3": "Forest fires",
+                "problem4": "Smog",
+                "solution1": "Air purification",
+                "solution2": "Ecology-friendly cars",
+                "solution3": "New green zones",
+                "feels_like": "Feels like: " + str(round(res["main"]["feels_like"])) + "°",
+                }
+        context = {"infoC":city_infoC, "pop_up":True}
     return render(request, "main1/weather_conditions.html", context)
 def climate_change_simulator(request):
     appid = "64b27a9ca653a9ab3855bc2801d2edaf"
