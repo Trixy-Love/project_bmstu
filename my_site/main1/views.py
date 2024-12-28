@@ -120,7 +120,7 @@ def climate_change_simulator(request):
                 "solution1": "Очистка воздуха",
                 "solution2": "Электрические автомобили",
                 "solution3": "Установка водосберегающих устройств",
-                "feels_like": "Feels like: " + str(round(res["main"]["feels_like"])) + "°C",
+                "feels_like": "Ощущается как: " + str(round(res["main"]["feels_like"])) + "°C",
                 }
         if city_name == "Moscow":
             city_infoC = {
@@ -135,7 +135,7 @@ def climate_change_simulator(request):
                 "solution1": "Сажайте больше деревьев и цветов",
                 "solution2": "Используйте звуконепроницаемые материалы",
                 "solution3": "Пользуйтесь общественным транспортом",
-                "feels_like": "Feels like: " + str(round(res["main"]["feels_like"])) + "°C",
+                "feels_like": "Ощущается как: " + str(round(res["main"]["feels_like"])) + "°C",
                 }
         if city_name == "Baghdad":
             city_infoC = {
@@ -150,7 +150,7 @@ def climate_change_simulator(request):
                 "solution1": "Поощряйте использование велосипедов",
                 "solution2": "Собирайте дождевую воду для орошения",
                 "solution3": "Запуск общественных субботников",
-                "feels_like": "Feels like: " + str(round(res["main"]["feels_like"])) + "°C",
+                "feels_like": "Ощущается как: " + str(round(res["main"]["feels_like"])) + "°C",
                 }
         if city_name == "Prague":
             city_infoC = {
@@ -165,7 +165,7 @@ def climate_change_simulator(request):
                 "solution1": "Использование общественного транспорта",
                 "solution2": "Внедрять программы утилизации отходов",
                 "solution3": "Создавайте зеленые крыши и стены",
-                "feels_like": "Feels like: " + str(round(res["main"]["feels_like"])) + "°C",
+                "feels_like": "Ощущается как: " + str(round(res["main"]["feels_like"])) + "°C",
                 }
         if city_name == "Warsaw":
             city_infoC = {
@@ -180,7 +180,7 @@ def climate_change_simulator(request):
                 "solution1": "Усилить регулирование выбросов",
                 "solution2": "Активизировать инициативы по посадке деревьев",
                 "solution3": "Создавайте больше парков и скверов",
-                "feels_like": "Feels like: " + str(round(res["main"]["feels_like"])) + "°C",
+                "feels_like": "Ощущается как: " + str(round(res["main"]["feels_like"])) + "°C",
                 }
         if city_name == "Vladivostok":
             city_infoC = {
@@ -195,7 +195,7 @@ def climate_change_simulator(request):
                 "solution1": "Использование общественного транспорта",
                 "solution2": "Соблюдать законы утилизации отходов",
                 "solution3": "Восстановление лесов",
-                "feels_like": "Feels like: " + str(round(res["main"]["feels_like"])) + "°C",
+                "feels_like": "Ощущается как:" + str(round(res["main"]["feels_like"])) + "°C",
                 }
         if city_name == "Niamey":
             city_infoC = {
@@ -210,7 +210,7 @@ def climate_change_simulator(request):
                 "solution1": "Пропагандировать сохранение водных ресурсов",
                 "solution2": "Поощрять устойчивое землепользование",
                 "solution3": "Совершенствование программ утилизации отходов",
-                "feels_like": "Feels like: " + str(round(res["main"]["feels_like"])) + "°C",
+                "feels_like": "Ощущается как: " + str(round(res["main"]["feels_like"])) + "°C",
                 }
         if city_name == "Shanghai":
             city_infoC = {
@@ -225,7 +225,7 @@ def climate_change_simulator(request):
                 "solution1": "Экологически-чистый общественный транспорт",
                 "solution2": "Внедрить более строгие правила в отношении выбросов",
                 "solution3": "Увеличьте усилия по переработке и разделению отходов",
-                "feels_like": "Feels like: " + str(round(res["main"]["feels_like"])) + "°C",
+                "feels_like": "Ощущается как: " + str(round(res["main"]["feels_like"])) + "°C",
                 }
         if city_name == "London":
             city_infoC = {
@@ -240,7 +240,7 @@ def climate_change_simulator(request):
                 "solution1": "Продвигать общественный транспорт",
                 "solution2": "Запуск общегородских кампаний по переработке отходов",
                 "solution3": "Создавайте больше зеленых городских пространств",
-                "feels_like": "Feels like: " + str(round(res["main"]["feels_like"])) + "°C",
+                "feels_like": "Ощущается как: " + str(round(res["main"]["feels_like"])) + "°C",
                 }
         if city_name == "Nuuk":
             city_infoC = {
@@ -255,7 +255,7 @@ def climate_change_simulator(request):
                 "solution1": "Использование возобновляемых источников энергии",
                 "solution2": "Совершенствование систем сбора отходов",
                 "solution3": "Поддерживать усилия по сохранению дикой природы",
-                "feels_like": "Feels like: " + str(round(res["main"]["feels_like"])) + "°C",
+                "feels_like": "Ощущается как: " + str(round(res["main"]["feels_like"])) + "°C",
                 }
         context = {"infoC":city_infoC, "pop_up":True}
     return render(request, "main1/climate_change_simulator.html", context)
@@ -274,7 +274,7 @@ def about(request):
         city_info = {
             "city": city.name,
             "temp": str(round(float(res["main"]["temp"])))+"°",
-            "feels_like": "Feels like: " + str(round(res["main"]["feels_like"])) + "°",
+            "feels_like": "Ощущается как: " + str(round(res["main"]["feels_like"])) + "°",
             "icon": res["weather"][0]["icon"],
             "error": False
         }
