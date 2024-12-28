@@ -234,7 +234,7 @@
        
         <div class="row">
             <div class="col-5">
-                <p1 style="left: 35px; top: 105px; position: absolute; color: white; font-size: 32px; font-weight: 400; word-wrap: break-word">Choose your city</p1>
+                <p1 style="left: 35px; top: 105px; position: absolute; color: white; font-size: 32px; font-weight: 400; word-wrap: break-word">Выберите город</p1>
                 <form style="left: 73px; top: 150px; position: absolute" action="" method="post">
                     {% csrf_token %}
                     <div>
@@ -286,19 +286,19 @@
           {% endif %}
             <div style="width: 724px; height: 27px; left: 169px; top: 412px; position: absolute">
                 <a href="http://127.0.0.1:8000/weather_conditions">
-                    <p1 style="left: 208px; top: 0px; position: absolute; text-align: center; color: white; font-size: 22px;   font-weight: 500; word-wrap: break-word">Weather today</p1>
+                    <p1 style="left: 208px; top: 0px; position: absolute; text-align: center; color: white; font-size: 22px;   font-weight: 500; word-wrap: break-word">Погода сегодня</p1>
                 </a>
                 <a href="http://127.0.0.1:8000/climate_change_simulator">
-                    <p1 style="width: 300px; left: 424px; top: 0px; position: absolute; color: white; font-size: 22px;   font-weight: 500; word-wrap: break-word">Climate change simulator</p1>
+                    <p1 style="width: 300px; left: 424px; top: 0px; position: absolute; color: white; font-size: 22px;   font-weight: 500; word-wrap: break-word">Симулятор изменения климата</p1>
                 </a>
                 <a href="http://127.0.0.1:8000/what_to_wear">
-                    <p1 style="left: 0px; top: 0px; position: absolute; text-align: center; color: white; font-size: 22px;   font-weight: 500; word-wrap: break-word">What to wear</p1>
+                    <p1 style="left: 0px; top: 0px; position: absolute; text-align: center; color: white; font-size: 22px;   font-weight: 500; word-wrap: break-word">Что надеть</p1>
                 </a>
             </div>
-            <p2 style="left: 316px; top: 241px; position: absolute; text-align: center; color: white; font-size: 64px;   font-weight: 500; word-wrap: break-word">Your Weather</p2>
+            <p2 style="left: 316px; top: 241px; position: absolute; text-align: center; color: white; font-size: 64px;   font-weight: 500; word-wrap: break-word">Ваша погода</p2>
             <div style="width: 187px; height: 125px; left: 172px; top: 106px; position: absolute">
                 <p1 style="left: 85px; top: 46px; width: 200px; position: absolute; color: white; font-size: 16px;   font-weight: 500; word-wrap: break-word">{{info.city}}</p1>
-                <p1 style="left: 3px; top: 0px; position: absolute; color: white; font-size: 24px;   font-weight: 500; word-wrap: break-word">Now</p1>
+                <p1 style="left: 3px; top: 0px; position: absolute; color: white; font-size: 24px;   font-weight: 500; word-wrap: break-word">Сейчас</p1>
                 <p1 style="left: 85px; top: 106px; position: absolute; color: white; font-size: 16px;   font-weight: 500; word-wrap: break-word">{{info.feels_like}} </p1>
                 <p1 style="left: 85px; top: 66px; position: absolute; color: white; font-size: 32px;   font-weight: 500; word-wrap: break-word">{{info.temp}}</p1>
                 <p1 style="width: 72px; height: 72px; left: 0px; top: 49px; position: absolute">
@@ -597,9 +597,9 @@
                 <path d="M1 1L30 30M30 1L1 30" stroke="#384352"/>
             </svg>
         </a>
-        <a href="http://127.0.0.1:8000/">Home</a>
-        <a href="http://127.0.0.1:8000/about">Contact</a>
-        <a href="http://127.0.0.1:8000/about">About</a>
+        <a href="http://127.0.0.1:8000/">Главная страница</a>
+        <a href="http://127.0.0.1:8000/about">Контакты</a>
+        <a href="http://127.0.0.1:8000/about">О нас</a>
     </div>
     <div id="main">
         <button class="openbtn" onclick="openSidebar()">
