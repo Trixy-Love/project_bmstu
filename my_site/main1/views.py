@@ -299,14 +299,17 @@ def what_to_wear(request):
     for city in cities:
         q = True
     res = requests.get(url.format(city.name)).json()
+    x = "111"
     if res.get("main"):
         city_info = {
             "city": city.name,
             "temp": str(round(float(res["main"]["temp"])))+"°",
             "feels_like": "Ощущается как:" + str(round(res["main"]["feels_like"])) + "°",
             "icon": res["weather"][0]["icon"],
-            "error": False
+            "error": False,
+            "img": x,
         }
+
     else:
         city_info={
             "city": city.name,
