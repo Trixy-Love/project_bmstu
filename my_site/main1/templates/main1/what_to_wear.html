@@ -8,6 +8,7 @@
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
+        background: rgba(166, 143, 109, 0.95);
     }
     .center{
         display: block;
@@ -81,6 +82,7 @@
         cursor: pointer;
         border: none;
         background-color: transparent; 
+        z-index: 100;
     }
     
     .openbtn:hover {
@@ -188,43 +190,7 @@
     </style>
 </head>
 <body>
-    {%if info.icon == "01d" %}
-    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YOeuL.png" />
-    {%elif info.icon == "02d" %}
-    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YOeuL.png" />
-    {%elif info.icon == "03d" %}
-    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQNE.png" />
-    {%elif info.icon == "04d" %}
-    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQNe.png" />
-    {%elif info.icon == "09d" %}
-    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQOU.png" />
-    {%elif info.icon == "10d" %}
-    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQPM.png" />
-    {%elif info.icon == "11d" %}
-    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQPg.png" />
-    {%elif info.icon == "13d" %}
-    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQQB.png" />
-    {%elif info.icon == "50d" %}
-    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTR3f.png" />
-    {%elif info.icon == "01n" %}
-    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQQi.png" />
-    {%elif info.icon == "02n" %}
-    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQQi.png" />
-    {%elif info.icon == "03n" %}
-    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQNE.png" />
-    {%elif info.icon == "04n" %}
-    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQNE.png" />
-    {%elif info.icon == "09n" %}
-    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQOU.png" />
-    {%elif info.icon == "10n" %}
-    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQOU.png" />
-    {%elif info.icon == "11n" %}
-    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQWy.png" />
-    {%elif info.icon == "13n" %}
-    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTQXG.png" />
-    {%elif info.icon == "50n" %}
-    <img style=" position: absolute; overflow-x: hidden; z-index: -100; width: 100%; height: 100%" src="https://i.yapx.cc/YTR5e.png" />
-    {% endif %}
+    
     <div id="sidebarq" class="sidebarq">
         <a href="javascript:void(0)" class="closebtnq" onclick="closeSidebarq()">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 31 31" fill="none">
@@ -245,51 +211,37 @@
             </div>
         </div>
     </div>
-    <div >
-        <div style="width: 100%; height: 100%; position: relative; background: white">
-          {%if info.icon == "01d" %}
-          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YNXVj.jpg" />
-          {%elif info.icon == "02d" %}
-          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YNXVj.jpg" />
-          {%elif info.icon == "03d" %}
-          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YTQiU.png" />
-          {%elif info.icon == "04d" %}
-          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YTQiU.png" />
-          {%elif info.icon == "09d" %}
-          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YTQje.png" />
-          {%elif info.icon == "10d" %}
-          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YTQj4.png" />
-          {%elif info.icon == "11d" %}
-          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YTQkk.png" />
-          {%elif info.icon == "13d" %}
-          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YTQk5.png" />
-          {%elif info.icon == "50d" %}
-          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YTR4M.png" />
-          {%elif info.icon == "01n" %}
-          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YTQnN.png" />
-          {%elif info.icon == "02n" %}
-          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YTQnN.png" />
-          {%elif info.icon == "03n" %}
-          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YTQiU.png" />
-          {%elif info.icon == "04n" %}
-          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YTQiU.png" />
-          {%elif info.icon == "09n" %}
-          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YTQje.png" />
-          {%elif info.icon == "10n" %}
-          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YTQje.png" />
-          {%elif info.icon == "11n" %}
-          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YTQoE.png" />
-          {%elif info.icon == "13n" %}
-          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YNXVj.jpg" />
-          {%elif info.icon == "50n" %}
-          <img style="width: 750px; height: 420.93px; left: 143px; top: 81px; position: absolute" src="https://i.yapx.cc/YTR7j.png" />
-          {% endif %}
+    <div style="width: 100%; height: 100%; position: relative; background: white">
+        <div style="width: 876px; height: 522px; left: 81px; top: 30px; position: absolute; background: #9E712E; border-radius: 13px; z-index: -2"></div>
+        <img style="width: 631.50px; height: 475px; left: 105px; top: 53px; position: absolute; box-shadow: 3px 3px 3px; filter: blur(3px); z-index: -1" src="https://i.yapx.cc/YY1g0.png" />
+        <div style="width: 237px; height: 197px; left: 499px; top: 53px; position: absolute; opacity: 0.50">
+            <svg width="237" height="197" viewBox="0 0 237 197" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M237 197L237 0H0C0 108.8 106.109 197 237 197Z" fill="white"/>
+            </svg>
+        </div>
+        <div style="width: 116px; height: 286px; left: 283px; top: 140px; position: absolute">
+            <div style="width: 116px; height: 133px; left: 0px; top: 78px; position: absolute; opacity: 0.80; background: white; border-radius: 22px"></div>
+            <img style="width: 95px; height: 286px; left: 10px; top: 0px; position: absolute" src="https://i.yapx.cc/YY2KC.png" />
+        </div>
+        <div style="width: 191px; height: 152px; left: 116px; top: 208px; position: absolute">
+            <div style="width: 116px; height: 133px; left: 18px; top: 10px; position: absolute; opacity: 0.80; background: white; border-radius: 22px"></div>
+            <img style="width: 191px; height: 152px; left: 0px; top: 0px; position: absolute" src="https://i.yapx.cc/YY2Je.png" />
+        </div>
+        <div style="width: 94px; height: 97px; left: 217px; top: 72px; position: absolute">
+            <div style="width: 78px; height: 72px; left: 7px; top: 25px; position: absolute; opacity: 0.70; background: white; border-radius: 15px"></div>
+            <img style="width: 94px; height: 87px; left: 0px; top: 0px; position: absolute" src="https://i.yapx.cc/YY2Iv.png" />
+        </div>
+        <p1 style="width: 196px; height: 474px; left: 753px; top: 64px; position: absolute; color: white; font-size: 16px; font-weight: 500; word-wrap: break-word">В городе в такой день идеально подойдут легкие вещи, например футболка, шорты или платье, а также удобные сандалии. Не забудьте взять с собой солнцезащитные очки и головной убор для защиты от солнца!</p1>
+        <div style="width: 115.53px; height: 112.47px; left: 205.59px; top: 391.53px; position: absolute">
+            <div style="width: 106px; height: 70px; left: 4.41px; top: 15.47px; position: absolute; opacity: 0.70; background: white; border-radius: 16px"></div>
+            <div style="width: 115.53px; height: 112.47px; left: 0px; top: 0px; position: absolute">
+                <img style="width: 104.27px; height: 103.44px; left: 0px; top: 0px; position: absolute" src="https://i.yapx.cc/YY2KM.png" />
+                <img style="width: 104.27px; height: 103.44px; left: 11.25px; top: 9.03px; position: absolute" src="https://i.yapx.cc/YY2KM.png" />
+            </div>
         </div>
     </div>
-    <div style="width: 100%; height: 100%; position: relative">
-        <div style="width: 750px; height: 110px; left: 144px; top: 283px; position: absolute; opacity: 0.66; background: white"></div>
-        <img style="left: 283px; top: 299px; position: absolute; color: white; width: 50 px; height: 50 px">{{ info.img }}</img>
     </div>
+    
     <div id="sidebar" class="sidebar">
         <a href="javascript:void(0)" class="accbtn" id="accbtn" onclick="openSidebarq()">
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
@@ -312,14 +264,295 @@
         <a href="http://127.0.0.1:8000/about">Контакты</a>
         <a href="http://127.0.0.1:8000/about">О нас</a>
     </div>
-    <div id="main">
-        <button class="openbtn" onclick="openSidebar()">
-            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="45" viewBox="0 0 11 46" fill="none">
-                <circle cx="5.5" cy="5.5" r="5" fill="white" stroke="black"/>
-                <circle cx="5.5" cy="22.6111" r="5" fill="white" stroke="black"/>
-                <circle cx="5.5" cy="39.7222" r="5" fill="white" stroke="black"/>
-              </svg>
-        </button>
+    <div style="z-index: 100">
+        <div id="main">
+            <button class="openbtn" onclick="openSidebar()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="45" viewBox="0 0 11 46" fill="none">
+                    <circle cx="5.5" cy="5.5" r="5" fill="white" stroke="black"/>
+                    <circle cx="5.5" cy="22.6111" r="5" fill="white" stroke="black"/>
+                    <circle cx="5.5" cy="39.7222" r="5" fill="white" stroke="black"/>
+                  </svg>
+            </button>
+        </div>
+    </div>
+    <div style="width: 187px; height: 125px; left: 546px; top: 61px; position: absolute">
+        <p1 style="left: 85px; top: 46px; width: 200px; position: absolute; color: white; font-size: 16px;   font-weight: 500; word-wrap: break-word">{{info.city}}</p1>
+            <p1 style="left: 3px; top: 0px; position: absolute; color: white; font-size: 24px;   font-weight: 500; word-wrap: break-word">Сейчас</p1>
+            <p1 style="left: 85px; top: 106px; position: absolute; color: white; font-size: 16px;   font-weight: 500; word-wrap: break-word">{{info.feels_like}} </p1>
+            <p1 style="left: 85px; top: 66px; position: absolute; color: white; font-size: 32px;   font-weight: 500; word-wrap: break-word">{{info.temp}}</p1>
+            <p1 style="width: 72px; height: 72px; left: 0px; top: 49px; position: absolute">
+                <div>
+                    {% if  info.icon == "01d" %}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66" fill="none">
+                        <g filter="url(#filter0_d_67_62)">
+                          <path d="M62 29C62 45.0163 49.0163 58 33 58C16.9837 58 4 45.0163 4 29C4 12.9837 16.9837 0 33 0C49.0163 0 62 12.9837 62 29Z" fill="#F8C740"/>
+                        </g>
+                        <defs>
+                          <filter id="filter0_d_67_62" x="0" y="0" width="66" height="66" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="4"/>
+                            <feGaussianBlur stdDeviation="2"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_67_62"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_67_62" result="shape"/>
+                          </filter>
+                        </defs>
+                    </svg>
+                    {% elif info.icon == "02d"%}
+                    <svg width="75" height="72" viewBox="0 0 75 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d_67_64)">
+                        <path d="M62 29C62 45.0163 49.0163 58 33 58C16.9837 58 4 45.0163 4 29C4 12.9837 16.9837 0 33 0C49.0163 0 62 12.9837 62 29Z" fill="#F8C740"/>
+                        </g>
+                        <g filter="url(#filter1_d_67_64)">
+                        <path d="M28.0286 62.7857C34.9723 62.7857 40.6 57.2847 40.6 50.4999C40.6 43.7152 34.9723 38.2142 28.0286 38.2142C22.7692 38.2142 18.2612 41.372 16.3853 45.8532C15.688 45.678 14.9563 45.5857 14.2 45.5857C9.33842 45.5857 5.40002 49.4357 5.40002 54.1857C5.40002 58.9356 9.33842 62.7857 14.2 62.7857H28.0286Z" fill="#A6B8DF" stroke="#5F75A6" stroke-width="2" stroke-linejoin="round"/>
+                        </g>
+                        <g filter="url(#filter2_d_67_64)">
+                        <path d="M50.8857 29.0714C45.2045 29.0714 40.6 24.338 40.6 18.5C40.6 12.662 45.2045 7.92859 50.8857 7.92859C55.1889 7.92859 58.8773 10.6458 60.4121 14.5017C60.9826 14.3509 61.5813 14.2714 62.2 14.2714C66.1777 14.2714 69.4 17.5843 69.4 21.6714C69.4 25.7586 66.1777 29.0714 62.2 29.0714H50.8857Z" fill="#A6B8DF" stroke="#5F75A6" stroke-width="2" stroke-linejoin="round"/>
+                        </g>
+                    </svg>
+                    {% elif info.icon == "03d"%}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="67" height="47" viewBox="0 0 67 47" fill="none">
+                        <path d="M42.6571 45.3836C55.44 45.3836 65.8 35.4471 65.8 23.1918C65.8 10.9365 55.44 1 42.6571 1C32.9751 1 24.6762 6.70398 21.2229 14.7983C19.9392 14.4819 18.5922 14.3151 17.2 14.3151C8.25022 14.3151 1 21.2695 1 29.8493C1 38.4291 8.25022 45.3836 17.2 45.3836H42.6571Z" fill="#A6B8DF" stroke="#5F75A6" stroke-width="2" stroke-linejoin="round"/>
+                    </svg>
+                    {% elif info.icon == "04d"%}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="83" height="61" viewBox="0 0 83 61" fill="none">
+                        <path d="M21.25 44.3973C10.065 44.3973 0.99995 34.6816 0.99995 22.6986C0.99995 10.7156 10.065 1 21.25 1C29.7217 1 36.9833 6.57723 40.0049 14.4917C41.1282 14.1823 42.3068 14.0192 43.525 14.0192C51.356 14.0192 57.7 20.8191 57.7 29.2082C57.7 37.5974 51.356 44.3973 43.525 44.3973H21.25Z" fill="#A6B8DF" stroke="#5F75A6" stroke-width="2" stroke-linejoin="round"/>
+                        <path d="M58.8571 59.1643C71.6399 59.1643 82 49.2279 82 36.9725C82 24.7172 71.6399 14.7808 58.8571 14.7808C49.1751 14.7808 40.8762 20.4847 37.4228 28.5791C36.1391 28.2627 34.7921 28.0958 33.4 28.0958C24.4502 28.0958 17.2 35.0503 17.2 43.6301C17.2 52.2099 24.4502 59.1643 33.4 59.1643H58.8571Z" fill="#A6B8DF" stroke="#5F75A6" stroke-width="2" stroke-linejoin="round"/>
+                    </svg>
+                    {% elif info.icon == "09d"%}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="83" height="73" viewBox="0 0 83 73" fill="none">
+                        <path d="M21.25 44.3973C10.065 44.3973 0.99995 34.6816 0.99995 22.6986C0.99995 10.7156 10.065 1 21.25 1C29.7217 1 36.9833 6.57723 40.0049 14.4917C41.1282 14.1823 42.3068 14.0192 43.525 14.0192C51.356 14.0192 57.7 20.8191 57.7 29.2082C57.7 37.5974 51.356 44.3973 43.525 44.3973H21.25Z" fill="#A6B8DF" stroke="#5F75A6" stroke-width="2" stroke-linejoin="round"/>
+                        <path d="M58.8571 59.1643C71.6399 59.1643 82 49.2279 82 36.9725C82 24.7172 71.6399 14.7808 58.8571 14.7808C49.1751 14.7808 40.8762 20.4847 37.4228 28.5791C36.1391 28.2627 34.7921 28.0958 33.4 28.0958C24.4502 28.0958 17.2 35.0503 17.2 43.6301C17.2 52.2099 24.4502 59.1643 33.4 59.1643H58.8571Z" fill="#A6B8DF" stroke="#5F75A6" stroke-width="2" stroke-linejoin="round"/>
+                        <path d="M68.0473 69.9759C68.1665 71.8715 66.5302 72.8599 65.2277 72.603C63.6552 72.4414 62.9253 70.9124 63.8622 69.1602C64.7731 67.7075 65.9781 66.5531 66.6817 66.533C67.2406 67.084 67.8994 68.5994 68.0473 69.9759Z" fill="#2FB8C8"/>
+                        <path d="M51.0473 69.9759C51.1665 71.8715 49.5302 72.8599 48.2277 72.603C46.6552 72.4414 45.9253 70.9124 46.8622 69.1602C47.7731 67.7075 48.9781 66.5531 49.6817 66.533C50.2406 67.084 50.8994 68.5994 51.0473 69.9759Z" fill="#2FB8C8"/>
+                        <path d="M34.0473 69.833C34.1665 71.7287 32.5302 72.7171 31.2277 72.4602C29.6552 72.2986 28.9253 70.7696 29.8622 69.0174C30.7731 67.5647 31.9781 66.4102 32.6817 66.3902C33.2406 66.9412 33.8994 68.4566 34.0473 69.833Z" fill="#2FB8C8"/>
+                    </svg>
+                    {% elif info.icon == "10d"%}
+                    <svg width="75" height="72" viewBox="0 0 75 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M23.3432 69.5899C23.4089 71.0978 22.3233 71.8939 21.4662 71.697C20.4306 71.5775 19.9598 70.3649 20.5895 68.9651C21.2 67.8037 22.0023 66.878 22.4664 66.8579C22.8311 67.2932 23.2552 68.4954 23.3432 69.5899Z" fill="#2FB8C8"/>
+                        <path d="M32.3432 69.5899C32.4089 71.0978 31.3233 71.8939 30.4662 71.697C29.4306 71.5775 28.9598 70.3649 29.5895 68.9651C30.2 67.8037 31.0023 66.878 31.4664 66.8579C31.8311 67.2932 32.2552 68.4954 32.3432 69.5899Z" fill="#2FB8C8"/>
+                        <g filter="url(#filter0_d_67_57)">
+                        <path d="M62 28.8097C62 44.7208 49.0163 57.6194 33 57.6194C16.9837 57.6194 4 44.7208 4 28.8097C4 12.8985 16.9837 0 33 0C49.0163 0 62 12.8985 62 28.8097Z" fill="#F8C740"/>
+                        </g>
+                        <g filter="url(#filter1_d_67_57)">
+                        <path d="M28.0286 62.3737C34.9723 62.3737 40.6 56.9088 40.6 50.1686C40.6 43.4284 34.9723 37.9635 28.0286 37.9635C22.7692 37.9635 18.2612 41.1006 16.3853 45.5523C15.688 45.3783 14.9563 45.2866 14.2 45.2866C9.33842 45.2866 5.40002 49.1114 5.40002 53.8301C5.40002 58.5489 9.33842 62.3737 14.2 62.3737H28.0286Z" fill="#A6B8DF" stroke="#5F75A6" stroke-width="2" stroke-linejoin="round"/>
+                        </g>
+                        <path d="M14.3432 69.5899C14.4089 71.0978 13.3233 71.8939 12.4662 71.697C11.4306 71.5775 10.9598 70.3649 11.5895 68.9651C12.2 67.8037 13.0023 66.878 13.4664 66.8579C13.8311 67.2932 14.2552 68.4954 14.3432 69.5899Z" fill="#2FB8C8"/>
+                        <g filter="url(#filter2_d_67_57)">
+                        <path d="M50.8857 28.8807C45.2045 28.8807 40.6 24.1784 40.6 18.3786C40.6 12.5789 45.2045 7.87659 50.8857 7.87659C55.1889 7.87659 58.8773 10.5759 60.4121 14.4065C60.9826 14.2568 61.5813 14.1778 62.2 14.1778C66.1777 14.1778 69.4 17.4689 69.4 21.5293C69.4 25.5896 66.1777 28.8807 62.2 28.8807H50.8857Z" fill="#A6B8DF" stroke="#5F75A6" stroke-width="2" stroke-linejoin="round"/>
+                        </g>
+                        <path d="M65.3432 34.8197C65.4089 36.3276 64.3233 37.1237 63.4662 36.9268C62.4306 36.8072 61.9598 35.5947 62.5895 34.1948C63.2 33.0334 64.0023 32.1077 64.4664 32.0877C64.8311 32.5229 65.2552 33.7251 65.3432 34.8197Z" fill="#2FB8C8"/>
+                        <path d="M57.3432 34.8197C57.4089 36.3276 56.3233 37.1237 55.4662 36.9268C54.4306 36.8072 53.9598 35.5947 54.5895 34.1948C55.2 33.0334 56.0023 32.1077 56.4664 32.0877C56.8311 32.5229 57.2552 33.7251 57.3432 34.8197Z" fill="#2FB8C8"/>
+                        <path d="M49.3432 34.8197C49.4089 36.3276 48.3233 37.1237 47.4662 36.9268C46.4306 36.8072 45.9598 35.5947 46.5895 34.1948C47.2 33.0334 48.0023 32.1077 48.4664 32.0877C48.8311 32.5229 49.2552 33.7251 49.3432 34.8197Z" fill="#2FB8C8"/>
+                    </svg>
+                    {% elif info.icon == "11d"%}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="83" height="69" viewBox="0 0 83 69" fill="none">
+                        <path d="M21.25 44.3973C10.065 44.3973 0.99995 34.6816 0.99995 22.6986C0.99995 10.7156 10.065 1 21.25 1C29.7217 1 36.9833 6.57723 40.0049 14.4917C41.1282 14.1823 42.3068 14.0192 43.525 14.0192C51.356 14.0192 57.7 20.8191 57.7 29.2082C57.7 37.5974 51.356 44.3973 43.525 44.3973H21.25Z" fill="#A6B8DF" stroke="#5F75A6" stroke-width="2" stroke-linejoin="round"/>
+                        <path d="M58.8571 59.1643C71.6399 59.1643 82 49.2279 82 36.9725C82 24.7172 71.6399 14.7808 58.8571 14.7808C49.1751 14.7808 40.8762 20.4847 37.4228 28.5791C36.1391 28.2627 34.7921 28.0958 33.4 28.0958C24.4502 28.0958 17.2 35.0503 17.2 43.6301C17.2 52.2099 24.4502 59.1643 33.4 59.1643H58.8571Z" fill="#A6B8DF" stroke="#5F75A6" stroke-width="2" stroke-linejoin="round"/>
+                        <path d="M39.5177 52.8167L50.3584 44L56 44.9861L45.2699 51.9466L56 55.891L31 69L48.0354 55.891L39.5177 52.8167Z" fill="#F8C740"/>
+                    </svg>
+                    {% elif info.icon == "13d"%}
+                    <svg width="78" height="87" viewBox="0 0 78 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d_67_58)">
+                        <path d="M62 28.8097C62 44.7208 49.0163 57.6194 33 57.6194C16.9837 57.6194 4 44.7208 4 28.8097C4 12.8985 16.9837 0 33 0C49.0163 0 62 12.8985 62 28.8097Z" fill="#F8C740"/>
+                        </g>
+                        <g filter="url(#filter1_d_67_58)">
+                        <path d="M31.0286 69.5478C37.9723 69.5478 43.6 64.7686 43.6 58.8741C43.6 52.9795 37.9723 48.2003 31.0286 48.2003C25.7692 48.2003 21.2612 50.9438 19.3853 54.837C18.688 54.6848 17.9563 54.6046 17.2 54.6046C12.3384 54.6046 8.40002 57.9495 8.40002 62.0762C8.40002 66.2029 12.3384 69.5478 17.2 69.5478H31.0286Z" fill="#A6B8DF" stroke="#5F75A6" stroke-width="2" stroke-linejoin="round"/>
+                        </g>
+                        <g filter="url(#filter2_d_67_58)">
+                        <path d="M53.8857 40.2571C48.2045 40.2571 43.6 36.1447 43.6 31.0727C43.6 26.0006 48.2045 21.8883 53.8857 21.8883C58.1889 21.8883 61.8773 24.249 63.4121 27.5989C63.9826 27.468 64.5813 27.3989 65.2 27.3989C69.1777 27.3989 72.4 30.2771 72.4 33.828C72.4 37.3789 69.1777 40.2571 65.2 40.2571H53.8857Z" fill="#A6B8DF" stroke="#5F75A6" stroke-width="2" stroke-linejoin="round"/>
+                        </g>
+                        <path d="M24.169 71.2192L25.9447 75.8377H31.6911L27.0422 78.6921L28.8179 83.3105L24.169 80.4562L19.5201 83.3105L21.2958 78.6921L16.6469 75.8377H22.3933L24.169 71.2192Z" fill="#E7E7E7"/>
+                        <path d="M19.987 73.6265L24.1041 76.0281L28.4539 73.2L26.6486 77.5124L30.7657 79.914L25.5328 80.1776L23.7275 84.49L22.2988 80.3406L17.0659 80.6042L21.4157 77.776L19.987 73.6265Z" fill="#E7E7E7"/>
+                        <path d="M58.169 42.5491L59.9447 47.1675H65.6911L61.0422 50.0219L62.8179 54.6404L58.169 51.786L53.5201 54.6404L55.2958 50.0219L50.6469 47.1675H56.3933L58.169 42.5491Z" fill="#E7E7E7"/>
+                        <path d="M53.987 44.9564L58.1041 47.358L62.4539 44.5298L60.6486 48.8422L64.7657 51.2438L59.5328 51.5075L57.7275 55.8199L56.2988 51.6704L51.0659 51.934L55.4157 49.1059L53.987 44.9564Z" fill="#E7E7E7"/>
+                    </svg>
+                    {% elif info.icon == "50d"%}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="70" height="67" viewBox="0 0 70 67" fill="none">
+                        <g filter="url(#filter0_d_64_61)">
+                          <path d="M43.1176 37.4235C54.8143 37.4235 64.2941 29.2691 64.2941 19.2118C64.2941 9.15439 54.8143 1 43.1176 1C34.2583 1 26.6645 5.68099 23.5046 12.3237C22.33 12.064 21.0974 11.9271 19.8235 11.9271C11.6342 11.9271 5 17.6342 5 24.6753C5 31.7163 11.6342 37.4235 19.8235 37.4235H43.1176Z" fill="#A6B8DF" stroke="#5F75A6" stroke-width="2" stroke-linejoin="round"/>
+                          <path d="M55.2493 53.695C38.5092 58.8728 25.9969 44.0265 10.6376 53.301C6.1302 56.8133 8.95741 58.7199 11.3811 56.8468C22.6009 47.1561 37.3527 61.1986 55.9929 57.6348C63.8167 55.2035 60.3665 52.0403 55.2493 53.695Z" fill="#A6B8DF" stroke="#5F75A6"/>
+                          <path d="M55.2493 42.8015C38.5092 47.7205 25.9969 33.6165 10.6376 42.4272C6.1302 45.764 8.95741 47.5752 11.3811 45.7958C22.6009 36.5896 37.3527 49.93 55.9929 46.5443C63.8167 44.2346 60.3665 41.2296 55.2493 42.8015Z" fill="#A6B8DF" stroke="#5F75A6"/>
+                          <path d="M55.2493 48.0706C38.5092 52.7307 25.9969 39.369 10.6376 47.716C6.1302 50.8772 8.95741 52.5931 11.3811 50.9073C22.6009 42.1856 37.3527 54.8239 55.9929 51.6164C63.8167 49.4283 60.3665 46.5814 55.2493 48.0706Z" fill="#A6B8DF" stroke="#5F75A6"/>
+                        </g>
+                        <defs>
+                          <filter id="filter0_d_64_61" x="0" y="0" width="69.2941" height="66.7283" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="4"/>
+                            <feGaussianBlur stdDeviation="2"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_64_61"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_64_61" result="shape"/>
+                          </filter>
+                        </defs>
+                    </svg>
+                    {% elif info.icon == "01n"%}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="76" height="78" viewBox="0 0 76 78" fill="none">
+                        <g filter="url(#filter0_d_67_80)">
+                          <mask id="mask0_67_80" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="8" y="2" width="64" height="68">
+                            <mask id="mask1_67_80" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="72" height="72">
+                              <path d="M41.0847 0L42.7119 0.36L43.322 0.54L45.1525 0.72L42.7119 2.88L40.2712 5.76C39.5932 6.72 38.2373 8.712 38.2373 9C38.2373 9.36 36.2034 12.24 36.2034 12.6C36.2034 12.888 35.3898 15.6 34.9831 16.92L34.1695 21.96C34.3051 24.12 34.5763 28.512 34.5763 28.8C34.5763 29.088 34.8475 30.36 34.9831 30.96L35.7966 33.48L37.8305 38.16L40.2712 41.76L43.5254 45.72L48 49.32L50.8475 51.12L54.9153 53.28L60.6102 55.08L64.678 55.8L68.7458 56.16H72L70.7797 57.96L69.5593 59.4L67.1186 61.92L64.2712 64.08L61.8305 65.52L58.5763 67.32L54.1017 69.48L51.2542 70.2L48 70.92L43.5254 71.64L41.0847 72H38.2373L36.2034 71.64H33.7627L30.5085 70.92L28.4746 70.56L26.8475 69.84L24 69.12L21.5593 68.04L18.7119 66.6L15.8644 64.8L12.6102 62.28L10.1695 60.12L7.72881 57.24L6.91525 56.16L5.69492 54.72L4.88136 53.28L4.0678 51.84L3.25424 50.4L2.44068 48.6L1.62712 46.44L1.22034 44.28L0.813559 42.12L0.40678 39.96L0 37.8V35.64V33.48L0.40678 31.68L0.813559 29.88L1.22034 27.72L2.0339 25.56L2.84746 23.4L3.66102 21.24L4.47458 19.44L6.1017 16.92L8.13559 14.04L10.9831 11.16L12.2034 10.08L13.8305 8.64L16.2712 6.84L17.8983 5.76L19.9322 4.68L21.5593 3.96L23.1864 3.24L25.2203 2.52L27.2542 1.8L28.8814 1.44L30.9153 1.08L32.5424 0.72L34.9831 0.36L37.4237 0H39.4576H41.0847Z" fill="#FFE991"/>
+                            </mask>
+                            <g mask="url(#mask1_67_80)">
+                              <mask id="mask2_67_80" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="8" y="2" width="71" height="68">
+                                <ellipse cx="43.3398" cy="35.6635" rx="34.9515" ry="33.6449" fill="#D9D9D9"/>
+                              </mask>
+                              <g mask="url(#mask2_67_80)">
+                                <path d="M78.6408 35.9997C78.6408 54.5813 62.9925 69.6446 43.6894 69.6446C24.3862 69.6446 8.73792 54.5813 8.73792 35.9997C8.73792 17.4182 24.3862 2.35486 43.6894 2.35486C62.9925 2.35486 78.6408 17.4182 78.6408 35.9997Z" fill="#FFEE8C"/>
+                                <ellipse cx="64.3107" cy="24.8971" rx="34.9515" ry="33.6449" fill="white"/>
+                              </g>
+                            </g>
+                          </mask>
+                          <g mask="url(#mask0_67_80)">
+                            <ellipse cx="40.6957" cy="30.5086" rx="40.6957" ry="49.4237" fill="#FFE283"/>
+                          </g>
+                        </g>
+                        <defs>
+                          <filter id="filter0_d_67_80" x="4.73792" y="2.01868" width="71.2621" height="75.2897" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="4"/>
+                            <feGaussianBlur stdDeviation="2"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_67_80"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_67_80" result="shape"/>
+                          </filter>
+                        </defs>
+                    </svg>
+                    {% elif info.icon == "02n"%}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="76" height="68" viewBox="0 0 76 68" fill="none">
+                        <g filter="url(#filter0_d_68_20)">
+                          <mask id="mask0_68_20" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="8" y="1" width="64" height="59">
+                            <mask id="mask1_68_20" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="72" height="63">
+                              <path d="M41.0847 0L42.7119 0.311259L43.322 0.466889L45.1525 0.622519L42.7119 2.49007L40.2712 4.98015C39.5932 5.81017 38.2373 7.53247 38.2373 7.78148C38.2373 8.09274 36.2034 10.5828 36.2034 10.8941C36.2034 11.1431 35.3898 13.4879 34.9831 14.6292L34.1695 18.9868C34.3051 20.8544 34.5763 24.6517 34.5763 24.9007C34.5763 25.1497 34.8475 26.2495 34.9831 26.7683L35.7966 28.9471L37.8305 32.9935L40.2712 36.1061L43.5254 39.5299L48 42.6425L50.8475 44.1988L54.9153 46.0664L60.6102 47.6227L64.678 48.2452L68.7458 48.5564H72L70.7797 50.1127L69.5593 51.3578L67.1186 53.5366L64.2712 55.4042L61.8305 56.6492L58.5763 58.2055L54.1017 60.073L51.2542 60.6956L48 61.3181L43.5254 61.9406L41.0847 62.2519H38.2373L36.2034 61.9406H33.7627L30.5085 61.3181L28.4746 61.0068L26.8475 60.3843L24 59.7618L21.5593 58.828L18.7119 57.583L15.8644 56.0267L12.6102 53.8479L10.1695 51.9803L7.72881 49.4902L6.91525 48.5564L5.69492 47.3114L4.88136 46.0664L4.0678 44.8213L3.25424 43.5763L2.44068 42.02L1.62712 40.1524L1.22034 38.2849L0.813559 36.4173L0.40678 34.5498L0 32.6822V30.8147V28.9471L0.40678 27.3908L0.813559 25.8345L1.22034 23.967L2.0339 22.0994L2.84746 20.2319L3.66102 18.3643L4.47458 16.808L6.1017 14.6292L8.13559 12.1391L10.9831 9.64904L12.2034 8.71526L13.8305 7.47022L16.2712 5.91393L17.8983 4.98015L19.9322 4.04637L21.5593 3.42385L23.1864 2.80133L25.2203 2.17881L27.2542 1.5563L28.8814 1.24504L30.9153 0.933778L32.5424 0.622519L34.9831 0.311259L37.4237 0H39.4576H41.0847Z" fill="#FFE991"/>
+                            </mask>
+                            <g mask="url(#mask1_68_20)">
+                              <mask id="mask2_68_20" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="8" y="1" width="71" height="59">
+                                <ellipse cx="43.3398" cy="30.835" rx="34.9515" ry="29.0897" fill="#D9D9D9"/>
+                              </mask>
+                              <g mask="url(#mask2_68_20)">
+                                <path d="M78.6407 31.1257C78.6407 47.1914 62.9924 60.2153 43.6892 60.2153C24.3861 60.2153 8.73779 47.1914 8.73779 31.1257C8.73779 15.0599 24.3861 2.03601 43.6892 2.03601C62.9924 2.03601 78.6407 15.0599 78.6407 31.1257Z" fill="#FFEE8C"/>
+                                <ellipse cx="64.3106" cy="21.5262" rx="34.9515" ry="29.0897" fill="white"/>
+                              </g>
+                            </g>
+                          </mask>
+                          <g mask="url(#mask0_68_20)">
+                            <ellipse cx="40.6957" cy="26.378" rx="40.6957" ry="42.7322" fill="#FFE283"/>
+                          </g>
+                        </g>
+                        <path d="M41.7458 63.9385C50.3656 63.9385 57.3517 58.0343 57.3517 50.7522C57.3517 43.47 50.3656 37.5658 41.7458 37.5658C35.2169 37.5658 29.6207 40.9551 27.292 45.7648C26.4264 45.5768 25.5181 45.4776 24.5793 45.4776C18.5442 45.4776 13.6552 49.6099 13.6552 54.7081C13.6552 59.8062 18.5442 63.9385 24.5793 63.9385H41.7458Z" fill="#A6B8DF" stroke="#5F75A6" stroke-width="2" stroke-linejoin="round"/>
+                        <defs>
+                          <filter id="filter0_d_68_20" x="4.73779" y="1.74536" width="71.2622" height="66.1793" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="4"/>
+                            <feGaussianBlur stdDeviation="2"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_68_20"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_68_20" result="shape"/>
+                          </filter>
+                        </defs>
+                    </svg>
+                    {% elif info.icon == "03n"%}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="67" height="47" viewBox="0 0 67 47" fill="none">
+                        <path d="M42.6571 45.3836C55.44 45.3836 65.8 35.4471 65.8 23.1918C65.8 10.9365 55.44 1 42.6571 1C32.9751 1 24.6762 6.70398 21.2229 14.7983C19.9392 14.4819 18.5922 14.3151 17.2 14.3151C8.25022 14.3151 1 21.2695 1 29.8493C1 38.4291 8.25022 45.3836 17.2 45.3836H42.6571Z" fill="#A6B8DF" stroke="#5F75A6" stroke-width="2" stroke-linejoin="round"/>
+                    </svg>
+                    {% elif info.icon == "04n"%}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="66" height="49" viewBox="0 0 83 61" fill="none">
+                        <path d="M21.25 44.3973C10.065 44.3973 0.99995 34.6816 0.99995 22.6986C0.99995 10.7156 10.065 1 21.25 1C29.7217 1 36.9833 6.57723 40.0049 14.4917C41.1282 14.1823 42.3068 14.0192 43.525 14.0192C51.356 14.0192 57.7 20.8191 57.7 29.2082C57.7 37.5974 51.356 44.3973 43.525 44.3973H21.25Z" fill="#A6B8DF" stroke="#5F75A6" stroke-width="2" stroke-linejoin="round"/>
+                        <path d="M58.8571 59.1643C71.6399 59.1643 82 49.2279 82 36.9725C82 24.7172 71.6399 14.7808 58.8571 14.7808C49.1751 14.7808 40.8762 20.4847 37.4228 28.5791C36.1391 28.2627 34.7921 28.0958 33.4 28.0958C24.4502 28.0958 17.2 35.0503 17.2 43.6301C17.2 52.2099 24.4502 59.1643 33.4 59.1643H58.8571Z" fill="#A6B8DF" stroke="#5F75A6" stroke-width="2" stroke-linejoin="round"/>
+                    </svg>
+                    {% elif info.icon == "09n"%}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="83" height="73" viewBox="0 0 83 73" fill="none">
+                        <path d="M21.25 44.3973C10.065 44.3973 0.99995 34.6816 0.99995 22.6986C0.99995 10.7156 10.065 1 21.25 1C29.7217 1 36.9833 6.57723 40.0049 14.4917C41.1282 14.1823 42.3068 14.0192 43.525 14.0192C51.356 14.0192 57.7 20.8191 57.7 29.2082C57.7 37.5974 51.356 44.3973 43.525 44.3973H21.25Z" fill="#A6B8DF" stroke="#5F75A6" stroke-width="2" stroke-linejoin="round"/>
+                        <path d="M58.8571 59.1643C71.6399 59.1643 82 49.2279 82 36.9725C82 24.7172 71.6399 14.7808 58.8571 14.7808C49.1751 14.7808 40.8762 20.4847 37.4228 28.5791C36.1391 28.2627 34.7921 28.0958 33.4 28.0958C24.4502 28.0958 17.2 35.0503 17.2 43.6301C17.2 52.2099 24.4502 59.1643 33.4 59.1643H58.8571Z" fill="#A6B8DF" stroke="#5F75A6" stroke-width="2" stroke-linejoin="round"/>
+                        <path d="M68.0473 69.9759C68.1665 71.8715 66.5302 72.8599 65.2277 72.603C63.6552 72.4414 62.9253 70.9124 63.8622 69.1602C64.7731 67.7075 65.9781 66.5531 66.6817 66.533C67.2406 67.084 67.8994 68.5994 68.0473 69.9759Z" fill="#2FB8C8"/>
+                        <path d="M51.0473 69.9759C51.1665 71.8715 49.5302 72.8599 48.2277 72.603C46.6552 72.4414 45.9253 70.9124 46.8622 69.1602C47.7731 67.7075 48.9781 66.5531 49.6817 66.533C50.2406 67.084 50.8994 68.5994 51.0473 69.9759Z" fill="#2FB8C8"/>
+                        <path d="M34.0473 69.833C34.1665 71.7287 32.5302 72.7171 31.2277 72.4602C29.6552 72.2986 28.9253 70.7696 29.8622 69.0174C30.7731 67.5647 31.9781 66.4102 32.6817 66.3902C33.2406 66.9412 33.8994 68.4566 34.0473 69.833Z" fill="#2FB8C8"/>
+                    </svg>
+                    {% elif info.icon == "10n"%}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="76" height="70" viewBox="0 0 76 70" fill="none">
+                        <mask id="mask0_70_129" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="9" y="1" width="67" height="56">
+                          <mask id="mask1_70_129" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="76" height="59">
+                            <path d="M43.3672 0L45.0847 0.293173L45.7288 0.43976L47.661 0.586346L45.0847 2.34538L42.5085 4.69077C41.7928 5.47256 40.3616 7.09479 40.3616 7.32933C40.3616 7.6225 38.2147 9.96788 38.2147 10.2611C38.2147 10.4956 37.3559 12.7042 36.9266 13.7791L36.0678 17.8836C36.2109 19.6426 36.4972 23.2193 36.4972 23.4538C36.4972 23.6884 36.7834 24.7243 36.9266 25.2129L37.7853 27.2651L39.9322 31.0763L42.5085 34.0081L45.9435 37.233L50.6667 40.1647L53.6723 41.6306L57.9661 43.3896L63.9774 44.8555L68.2712 45.4418L72.565 45.735H76L74.7119 47.2009L73.4237 48.3736L70.8475 50.4258L67.8418 52.1848L65.2655 53.3575L61.8305 54.8234L57.1073 56.5824L54.1017 57.1687L50.6667 57.7551L45.9435 58.3414L43.3672 58.6346H40.3616L38.2147 58.3414H35.6384L32.2034 57.7551L30.0565 57.4619L28.339 56.8756L25.3333 56.2892L22.7571 55.4097L19.7514 54.237L16.7458 52.7711L13.3107 50.7189L10.7345 48.9599L8.15819 46.6145L7.29943 45.735L6.0113 44.5623L5.15254 43.3896L4.29379 42.2169L3.43503 41.0442L2.57627 39.5784L1.71751 37.8193L1.28814 36.0603L0.858757 34.3012L0.429379 32.5422L0 30.7832V29.0241V27.2651L0.429379 25.7992L0.858757 24.3334L1.28814 22.5743L2.14689 20.8153L3.00565 19.0562L3.86441 17.2972L4.72316 15.8313L6.44068 13.7791L8.58757 11.4337L11.5932 9.08836L12.8814 8.20885L14.5989 7.03615L17.1751 5.57029L18.8927 4.69077L21.0395 3.81125L22.7571 3.2249L24.4746 2.63856L26.6215 2.05221L28.7684 1.46587L30.4859 1.17269L32.6328 0.879519L34.3503 0.586346L36.9266 0.293173L39.5028 0H41.6497H43.3672Z" fill="#FFE991"/>
+                          </mask>
+                          <g mask="url(#mask1_70_129)">
+                            <mask id="mask2_70_129" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="8" y="1" width="75" height="56">
+                              <ellipse cx="45.7476" cy="29.0433" rx="36.8932" ry="27.3994" fill="#D9D9D9"/>
+                            </mask>
+                            <g mask="url(#mask2_70_129)">
+                              <path d="M83.0098 29.3172C83.0098 44.4494 66.4921 56.7166 46.1166 56.7166C25.741 56.7166 9.22339 44.4494 9.22339 29.3172C9.22339 14.185 25.741 1.91785 46.1166 1.91785C66.4921 1.91785 83.0098 14.185 83.0098 29.3172Z" fill="#FFEE8C"/>
+                              <ellipse cx="67.8836" cy="20.2755" rx="36.8932" ry="27.3994" fill="white"/>
+                            </g>
+                          </g>
+                        </mask>
+                        <g mask="url(#mask0_70_129)">
+                          <ellipse cx="42.9565" cy="24.8451" rx="42.9565" ry="40.2492" fill="#FFE283"/>
+                        </g>
+                        <path d="M42.7458 60.9386C51.3656 60.9386 58.3517 55.0344 58.3517 47.7523C58.3517 40.4702 51.3656 34.5659 42.7458 34.5659C36.2169 34.5659 30.6207 37.9552 28.292 42.7649C27.4264 42.5769 26.5181 42.4777 25.5793 42.4777C19.5442 42.4777 14.6552 46.6101 14.6552 51.7082C14.6552 56.8063 19.5442 60.9386 25.5793 60.9386H42.7458Z" fill="#A6B8DF" stroke="#5F75A6" stroke-width="2" stroke-linejoin="round"/>
+                        <path d="M51.1501 67.2732C51.2317 68.9023 49.884 69.7624 48.8201 69.5497C47.5344 69.4206 46.9499 68.1105 47.7316 66.5981C48.4896 65.3433 49.4856 64.3432 50.0617 64.3216C50.5144 64.7918 51.0408 66.0906 51.1501 67.2732Z" fill="#2FB8C8"/>
+                        <path d="M37.1501 67.2732C37.2317 68.9024 35.884 69.7625 34.8201 69.5497C33.5344 69.4206 32.9499 68.1106 33.7316 66.5981C34.4896 65.3433 35.4856 64.3432 36.0617 64.3216C36.5144 64.7918 37.0408 66.0906 37.1501 67.2732Z" fill="#2FB8C8"/>
+                        <path d="M23.1501 67.2733C23.2317 68.9024 21.884 69.7625 20.8201 69.5498C19.5344 69.4206 18.9499 68.1106 19.7316 66.5982C20.4896 65.3434 21.4856 64.3433 22.0617 64.3216C22.5144 64.7919 23.0408 66.0907 23.1501 67.2733Z" fill="#2FB8C8"/>
+                    </svg>
+                    {% elif info.icon == "11n"%}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="83" height="69" viewBox="0 0 83 69" fill="none">
+                        <path d="M21.25 44.3973C10.065 44.3973 0.99995 34.6816 0.99995 22.6986C0.99995 10.7156 10.065 1 21.25 1C29.7217 1 36.9833 6.57723 40.0049 14.4917C41.1282 14.1823 42.3068 14.0192 43.525 14.0192C51.356 14.0192 57.7 20.8191 57.7 29.2082C57.7 37.5974 51.356 44.3973 43.525 44.3973H21.25Z" fill="#A6B8DF" stroke="#5F75A6" stroke-width="2" stroke-linejoin="round"/>
+                        <path d="M58.8571 59.1643C71.6399 59.1643 82 49.2279 82 36.9725C82 24.7172 71.6399 14.7808 58.8571 14.7808C49.1751 14.7808 40.8762 20.4847 37.4228 28.5791C36.1391 28.2627 34.7921 28.0958 33.4 28.0958C24.4502 28.0958 17.2 35.0503 17.2 43.6301C17.2 52.2099 24.4502 59.1643 33.4 59.1643H58.8571Z" fill="#A6B8DF" stroke="#5F75A6" stroke-width="2" stroke-linejoin="round"/>
+                        <path d="M39.5177 52.8167L50.3584 44L56 44.9861L45.2699 51.9466L56 55.891L31 69L48.0354 55.891L39.5177 52.8167Z" fill="#F8C740"/>
+                    </svg>
+                    {% elif info.icon == "13n"%}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="76" height="79" viewBox="0 0 76 79" fill="none">
+                        <mask id="mask0_68_21" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="9" y="1" width="67" height="56">
+                          <mask id="mask1_68_21" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="76" height="59">
+                            <path d="M43.3672 0L45.0847 0.293173L45.7288 0.43976L47.661 0.586346L45.0847 2.34538L42.5085 4.69077C41.7928 5.47256 40.3616 7.09479 40.3616 7.32933C40.3616 7.6225 38.2147 9.96788 38.2147 10.2611C38.2147 10.4956 37.3559 12.7042 36.9266 13.7791L36.0678 17.8836C36.2109 19.6426 36.4972 23.2193 36.4972 23.4538C36.4972 23.6884 36.7834 24.7243 36.9266 25.2129L37.7853 27.2651L39.9322 31.0763L42.5085 34.0081L45.9435 37.233L50.6667 40.1647L53.6723 41.6306L57.9661 43.3896L63.9774 44.8555L68.2712 45.4418L72.565 45.735H76L74.7119 47.2009L73.4237 48.3736L70.8475 50.4258L67.8418 52.1848L65.2655 53.3575L61.8305 54.8234L57.1073 56.5824L54.1017 57.1687L50.6667 57.7551L45.9435 58.3414L43.3672 58.6346H40.3616L38.2147 58.3414H35.6384L32.2034 57.7551L30.0565 57.4619L28.339 56.8756L25.3333 56.2892L22.7571 55.4097L19.7514 54.237L16.7458 52.7711L13.3107 50.7189L10.7345 48.9599L8.15819 46.6145L7.29943 45.735L6.0113 44.5623L5.15254 43.3896L4.29379 42.2169L3.43503 41.0442L2.57627 39.5784L1.71751 37.8193L1.28814 36.0603L0.858757 34.3012L0.429379 32.5422L0 30.7832V29.0241V27.2651L0.429379 25.7992L0.858757 24.3334L1.28814 22.5743L2.14689 20.8153L3.00565 19.0562L3.86441 17.2972L4.72316 15.8313L6.44068 13.7791L8.58757 11.4337L11.5932 9.08836L12.8814 8.20885L14.5989 7.03615L17.1751 5.57029L18.8927 4.69077L21.0395 3.81125L22.7571 3.2249L24.4746 2.63856L26.6215 2.05221L28.7684 1.46587L30.4859 1.17269L32.6328 0.879519L34.3503 0.586346L36.9266 0.293173L39.5028 0H41.6497H43.3672Z" fill="#FFE991"/>
+                          </mask>
+                          <g mask="url(#mask1_68_21)">
+                            <mask id="mask2_68_21" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="8" y="1" width="75" height="56">
+                              <ellipse cx="45.7476" cy="29.0433" rx="36.8932" ry="27.3994" fill="#D9D9D9"/>
+                            </mask>
+                            <g mask="url(#mask2_68_21)">
+                              <path d="M83.0098 29.3171C83.0098 44.4494 66.4921 56.7165 46.1166 56.7165C25.741 56.7165 9.22339 44.4494 9.22339 29.3171C9.22339 14.1849 25.741 1.91779 46.1166 1.91779C66.4921 1.91779 83.0098 14.1849 83.0098 29.3171Z" fill="#FFEE8C"/>
+                              <ellipse cx="67.8836" cy="20.2754" rx="36.8932" ry="27.3994" fill="white"/>
+                            </g>
+                          </g>
+                        </mask>
+                        <g mask="url(#mask0_68_21)">
+                          <ellipse cx="42.9565" cy="24.8452" rx="42.9565" ry="40.2492" fill="#FFE283"/>
+                        </g>
+                        <path d="M44.0651 60.2233C53.1638 60.2233 60.538 54.6622 60.538 47.8032C60.538 40.9442 53.1638 35.3831 44.0651 35.3831C37.1735 35.3831 31.2664 38.5754 28.8083 43.1056C27.8946 42.9285 26.9358 42.8351 25.9449 42.8351C19.5745 42.8351 14.4138 46.7274 14.4138 51.5292C14.4138 56.3311 19.5745 60.2233 25.9449 60.2233H44.0651Z" fill="#A6B8DF" stroke="#5F75A6" stroke-width="2" stroke-linejoin="round"/>
+                        <path d="M38.1785 61.8916L40.0529 66.8987H46.1185L41.2113 69.9932L43.0857 75.0003L38.1785 71.9057L33.2713 75.0003L35.1457 69.9932L30.2384 66.8987H36.3041L38.1785 61.8916Z" fill="#E7E7E7"/>
+                        <path d="M33.7641 64.5015L38.1099 67.1051L42.7013 64.039L40.7957 68.7143L45.1415 71.318L39.618 71.6038L37.7124 76.279L36.2043 71.7804L30.6807 72.0662L35.2722 69.0001L33.7641 64.5015Z" fill="#E7E7E7"/>
+                    </svg>
+                    {% elif info.icon == "50n"%}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="70" height="67" viewBox="0 0 70 67" fill="none">
+                        <g filter="url(#filter0_d_64_61)">
+                          <path d="M43.1176 37.4235C54.8143 37.4235 64.2941 29.2691 64.2941 19.2118C64.2941 9.15439 54.8143 1 43.1176 1C34.2583 1 26.6645 5.68099 23.5046 12.3237C22.33 12.064 21.0974 11.9271 19.8235 11.9271C11.6342 11.9271 5 17.6342 5 24.6753C5 31.7163 11.6342 37.4235 19.8235 37.4235H43.1176Z" fill="#A6B8DF" stroke="#5F75A6" stroke-width="2" stroke-linejoin="round"/>
+                          <path d="M55.2493 53.695C38.5092 58.8728 25.9969 44.0265 10.6376 53.301C6.1302 56.8133 8.95741 58.7199 11.3811 56.8468C22.6009 47.1561 37.3527 61.1986 55.9929 57.6348C63.8167 55.2035 60.3665 52.0403 55.2493 53.695Z" fill="#A6B8DF" stroke="#5F75A6"/>
+                          <path d="M55.2493 42.8015C38.5092 47.7205 25.9969 33.6165 10.6376 42.4272C6.1302 45.764 8.95741 47.5752 11.3811 45.7958C22.6009 36.5896 37.3527 49.93 55.9929 46.5443C63.8167 44.2346 60.3665 41.2296 55.2493 42.8015Z" fill="#A6B8DF" stroke="#5F75A6"/>
+                          <path d="M55.2493 48.0706C38.5092 52.7307 25.9969 39.369 10.6376 47.716C6.1302 50.8772 8.95741 52.5931 11.3811 50.9073C22.6009 42.1856 37.3527 54.8239 55.9929 51.6164C63.8167 49.4283 60.3665 46.5814 55.2493 48.0706Z" fill="#A6B8DF" stroke="#5F75A6"/>
+                        </g>
+                        <defs>
+                          <filter id="filter0_d_64_61" x="0" y="0" width="69.2941" height="66.7283" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="4"/>
+                            <feGaussianBlur stdDeviation="2"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_64_61"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_64_61" result="shape"/>
+                          </filter>
+                        </defs>
+                    </svg>
+                    {% else  %}
+                        <p1>error</p1>
+                    {% endif %}
     </div>
     <script>
     function openSidebar() {
