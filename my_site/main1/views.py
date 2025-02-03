@@ -305,6 +305,7 @@ def what_to_wear(request):
         city_info = {
             "city": city.name,
             "temp": str(round(float(res["main"]["temp"])))+"°",
+            "temp1" : round(float(res["main"]["temp"])),
             "feels_like": "Ощущается как:" + str(round(res["main"]["feels_like"])) + "°",
             "icon": res["weather"][0]["icon"],
             "error": False,
