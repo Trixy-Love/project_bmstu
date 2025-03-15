@@ -6,6 +6,7 @@ from .forms import City1Form
 from django.shortcuts import redirect
 from django.http import HttpResponse
 def index(request):
+    url1 = "https://engine.hotellook.com/api/v2/lookup.json?query={}&lang=ru&lookFor=both&limit=1"
     appid = "64b27a9ca653a9ab3855bc2801d2edaf"
     url="https://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid=" + appid
     if(request.method == "POST"):
@@ -15,6 +16,7 @@ def index(request):
     cities = City.objects.all()
     for city in cities:
         q = True
+    res1 = requests.get(url1.format(city.name)).json()
     res = requests.get(url.format(city.name)).json()
     if res.get("main"):
         city_info = {
@@ -22,7 +24,8 @@ def index(request):
             "temp": str(round(float(res["main"]["temp"])))+"°",
             "feels_like": "Ощущается как: " + str(round(res["main"]["feels_like"])) + "°",
             "icon": res["weather"][0]["icon"],
-            "error": False
+            "error": False,
+            "hotel": res1["results"]["hotels"][0]["label"]
         }
     else:
         city_info={
@@ -63,6 +66,7 @@ def user_settings(request):
     return render(request, "main1/user_settings.html", context)
 
 def weather_conditions(request):
+    url1 = "https://engine.hotellook.com/api/v2/lookup.json?query={}&lang=ru&lookFor=both&limit=1"
     appid = "64b27a9ca653a9ab3855bc2801d2edaf"
     url="https://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid=" + appid
     if(request.method == "POST"):
@@ -72,6 +76,7 @@ def weather_conditions(request):
     cities = City.objects.all()
     for city in cities:
         q = True
+    res1 = requests.get(url1.format(city.name)).json()
     res = requests.get(url.format(city.name)).json()
     if res.get("main"):
         city_info = {
@@ -85,6 +90,7 @@ def weather_conditions(request):
             "pressure":str(res["main"]["pressure"]) + "mm Hg",
             "humidity":str(res["main"]["humidity"])+"%",
             "descriprion":str(res["weather"][0]["description"]),
+            "hotel": res1["results"]["hotels"][0]["label"]
         }
     else:
         city_info={
