@@ -221,60 +221,76 @@
         </div>
         <div style="width: 116px; height: 286px; left: 283px; top: 140px; position: absolute">
             <div style="width: 116px; height: 133px; left: 0px; top: 78px; position: absolute; opacity: 0.80; background: white; border-radius: 22px"></div>
-            {%if info.temp1 <= 0 %}
+            {%if info.temp1 <= -5 %}
             <img style="width: 95px; height: 286px; left: 10px; top: 0px; position: absolute" src="https://i.yapx.ru/YZ8LJ.png" />
-            {%elif info.temp1 > 0 and info.temp1 <= 15 %}
+            {%elif info.temp1 > -5 and info.temp1 <= 5 %}
             <img style="width: 95px; height: 286px; left: 10px; top: 0px; position: absolute" src="https://i.yapx.ru/YZ8Lo.png" />
-            {%elif info.temp1 > 15 and info.temp1 < 25 %}
+            {%elif info.temp1 >= 5 and info.temp1 < 15 %}
+            <img style="width: 95px; height: 286px; left: 10px; top: 0px; position: absolute" src="https://i.yapx.cc/YnJoR.png" />
+            {%elif info.temp1 >= 15 and info.temp1 < 20 %}
             <img style="width: 95px; height: 286px; left: 10px; top: 0px; position: absolute" src="https://i.yapx.ru/YZ8Lo.png" />
-            {%elif info.temp1 >= 25 %}
-            <img style="width: 95px; height: 286px; left: 10px; top: 0px; position: absolute" src="https://i.yapx.ru/YZ8SF.png" />
+            {%elif info.temp1 >= 20 and info.temp1 < 25 %}
+            <img style="width: 95px; height: 286px; left: 10px; top: 0px; position: absolute" src="https://i.yapx.cc/YnJ27.png" />
+            {%elif info.temp1 >= 25%}
+            <img style="width: 95px; height: 286px; left: 10px; top: 0px; position: absolute" src="https://i.yapx.cc/YnJ27.png" />
             {% endif %}
         </div>
         <div style="width: 191px; height: 152px; left: 116px; top: 208px; position: absolute">
             <div style="width: 116px; height: 133px; left: 18px; top: 10px; position: absolute; opacity: 0.80; background: white; border-radius: 22px"></div>
-            {%if info.temp1 <= 0 %}
+            {%if info.temp1 <= -5 %}
             <img style="width: 191px; height: 152px; left: -15px; top: 0px; position: absolute" src="https://i.yapx.ru/YZ8Td.png" />
-            {%elif info.temp1 > 0 and info.temp1 <= 15 %}
+            {%elif info.temp1 > -5 and info.temp1 <= 5 %}
             <img style="width: 191px; height: 152px; left: -15px; top: 0px; position: absolute" src="https://i.yapx.ru/YZ8UI.png" />
-            {%elif info.temp1 > 15 and info.temp1 < 25 %}
-            <img style="width: 191px; height: 152px; left: -20px; top: 0px; position: absolute" src="https://i.yapx.ru/YZ8Uz.png" />
-            {%elif info.temp1 >= 25 %}
-            <img style="width: 191px; height: 152px; left: -20px; top: 0px; position: absolute" src="https://i.yapx.ru/YZ8Uz.png" />
+            {%elif info.temp1 >= 5 and info.temp1 < 15 %}
+            <img style="width: 191px; height: 152px; left: -20px; top: 0px; position: absolute" src="https://i.yapx.cc/YnJoZ.png" />
+            {%elif info.temp1 >= 15 and info.temp1 < 20 %}
+            <img style="width: 191px; height: 152px; left: -20px; top: 0px; position: absolute" src="https://i.yapx.cc/YnJoW.png" />
+            {%elif info.temp1 >= 20 and info.temp1 < 25 %}
+            <img style="width: 191px; height: 152px; left: -15px; top: 0px; position: absolute" src="https://i.yapx.cc/YnJ4f.png" />
+            {%elif info.temp1 >= 25%}
+            <img style="width: 191px; height: 152px; left: -15px; top: 0px; position: absolute" src="https://i.yapx.cc/YnJ5J.png" />
             {% endif %}
         </div>
         <div style="width: 94px; height: 97px; left: 217px; top: 72px; position: absolute">
             <div style="width: 78px; height: 72px; left: 7px; top: 25px; position: absolute; opacity: 0.70; background: white; border-radius: 15px"></div>
-            {%if info.temp1 <= 0 %}
+            {%if info.temp1 <= -5 %}
             <img style="width: 94px; height: 87px; left: 0px; top: 15px; position: absolute" src="https://i.yapx.ru/YZ8Of.png" />
-            {%elif info.temp1 > 0 and info.temp1 <= 15 %}
+            {%elif info.temp1 > -5 and info.temp1 <= 5 %}
             <img style="width: 94px; height: 87px; left: 0px; top: 15px; position: absolute" src="https://i.yapx.ru/YZ8Of.png" />
-            {%elif info.temp1 > 15 and info.temp1 < 25 %}
-            <img style="width: 94px; height: 87px; left: 0px; top: 0px; position: absolute" src="https://i.yapx.cc/YY2Iv.png" />
-            {%elif info.temp1 >= 25 %}
-            <img style="width: 94px; height: 87px; left: 0px; top: 0px; position: absolute" src="https://i.yapx.cc/YY2Iv.png" />
+            {%elif info.temp1 >= 5 and info.temp1 < 15 %}
+            
+            {%elif info.temp1 >= 15 and info.temp1 < 20 %}
+            
+            {%elif info.temp1 >= 20 and info.temp1 < 25 %}
+            <img style="width: 94px; height: 87px; left: 0px; top: 15px; position: absolute" src="https://i.yapx.cc/YnJ5i.png" />
+            {%elif info.temp1 >= 25%}
+            <img style="width: 94px; height: 87px; left: 0px; top: 15px; position: absolute" src="https://i.yapx.cc/YnJ5i.png" />
             {% endif %}
         </div>
         <div>
-          {%if info.temp1 <= 0 %}
+          {%if info.temp1 <= -5 %}
           <p1 style="width: 196px; height: 474px; left: 753px; top: 64px; position: absolute; color: white; font-size: 16px; font-weight: 500; word-wrap: break-word">При температуре ниже нуля важно обеспечить теплоизоляцию и влагоотвод. Наденьте термобелье из синтетики или шерсти, хлопок здесь не подойдет. Вторым слоем выбирайте флис или мягкую пуховую куртку. Верхняя одежда должна быть с хорошей теплозащитой – идеально подойдет пуховик или зимнее пальто с утеплителем. Не забудьте про теплые шерстяные носки, варежки, шапку и тёплую обувь с толстой подошвой для безопасности.</p1>
-          {%elif info.temp1 > 0 and info.temp1 <= 15 %}
+          {%elif info.temp1 > -5 and info.temp1 <= 5 %}
           <p1 style="width: 196px; height: 474px; left: 753px; top: 64px; position: absolute; color: white; font-size: 16px; font-weight: 500; word-wrap: break-word">Для прохладной погоды до +15°C подойдет легкая куртка или ветровка с утеплителем. Базовый слой – трикотаж или футболка, а для тепла – шерстяные колготки или термобрюки. Обувь выбирайте закрытую, комфортную: кроссовки или ботинки на мягкой подошве. В прохладные вечера дополните образ шарфом и головным убором.</p1>
-          {%elif info.temp1 > 15 and info.temp1 < 25 %}
+          {%elif info.temp1 > 5 and info.temp1 < 15 %}
           <p1 style="width: 196px; height: 474px; left: 753px; top: 64px; position: absolute; color: white; font-size: 16px; font-weight: 500; word-wrap: break-word">Легкая одежда из натуральных тканей – хлопковая футболка или топ, льняные брюки или юбка. Утром можно добавить тонкую кофту или жакет. Обувь выбирайте комфортную: кроссовки, мокасины или сандалии. Защитите себя от солнца головным убором и используйте легкий платок при необходимости.</p1>
-          {%elif info.temp1 >= 25 %}
+          {%elif info.temp1 >= 15 and info.temp1 < 20 %}
           <p1 style="width: 196px; height: 474px; left: 753px; top: 64px; position: absolute; color: white; font-size: 16px; font-weight: 500; word-wrap: break-word">В городе в такой день идеально подойдут легкие вещи, например футболка, шорты или платье, а также удобные сандалии. Не забудьте взять с собой солнцезащитные очки и головной убор для защиты от солнца!</p1>
           {% endif %}        
         </div>
         <div style="width: 115.53px; height: 112.47px; left: 205.59px; top: 391.53px; position: absolute">
             <div style="width: 106px; height: 70px; left: 4.41px; top: 15.47px; position: absolute; opacity: 0.70; background: white; border-radius: 16px"></div>
             <div style="width: 115.53px; height: 112.47px; left: 0px; top: 0px; position: absolute">
-              {%if info.temp1 <= 0 %}
+              {%if info.temp1 <= -5 %}
               <img style="width: 100%; height: 100%; left: 5px; top: -4px; position: absolute" src="https://i.yapx.ru/YZ8ZT.png" />
-              {%elif info.temp1 > 0 and info.temp1 <= 15 %}
+              {%elif info.temp1 > -5 and info.temp1 <= 5 %}
               <img style="width: 94px; height: 87px; left: 5px; top: -4px; position: absolute" src="https://i.yapx.ru/YZ8ZT.png" />
-              {%elif info.temp1 > 15 and info.temp1 < 25 %}
+              {%elif info.temp1 >= 5 and info.temp1 < 15 %}
               <img style="width: 94px; height: 87px; left: 5px; top: 10px; position: absolute" src="https://i.yapx.ru/YZ8YB.png" />
+              {%elif info.temp1 >= 15 and info.temp1 < 20 %}
+              <img style="width: 94px; height: 87px; left: 5px; top: 10px; position: absolute" src="https://i.yapx.cc/YnJ7C.png" />
+              {%elif info.temp1 >= 20 and info.temp1 < 25 %}
+              <img style="width: 94px; height: 87px; left: 5px; top: 10px; position: absolute" src="https://i.yapx.cc/YnJ7C.png" />
               {%elif info.temp1 >= 25 %}
               <img style="width: 94px; height: 87px; left: 5px; top: 10px; position: absolute" src="https://i.yapx.ru/YZ8YB.png" />
               {% endif %}
